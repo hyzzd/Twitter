@@ -9,6 +9,7 @@
 #import "LoginViewController.h"
 #import "TwitterClient.h"
 #import "TweetsViewController.h"
+#import "User.h"
 
 @interface LoginViewController ()
 
@@ -21,9 +22,10 @@
         if (user != nil) {
             // Modally present tweets view
             NSLog(@"Welcome to Twitter, %@", user.name);
-            [self presentViewController:[[TweetsViewController alloc] init] animated:YES completion:nil];
+            [[NSNotificationCenter defaultCenter] postNotificationName:USER_DID_LOGIN_NOTIFICATION object:nil];
         } else {
             // Present error view
+            NSLog(@"Error: %@", error);
         }
     }];
 }

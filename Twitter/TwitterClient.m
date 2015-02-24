@@ -89,6 +89,7 @@ NSString * const TWITTER_BASE_URL = @"https://api.twitter.com";
         }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Failed getting tweets!");
+        NSLog(@"Error from TwitterClient: %@", error);
 
         if (completion != nil) {
             completion(nil, error);

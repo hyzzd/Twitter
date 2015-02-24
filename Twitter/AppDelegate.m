@@ -22,23 +22,35 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userDidLogout) name:USER_DID_LOGOUT_NOTIFICATION object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userDidLogin) name:USER_DID_LOGIN_NOTIFICATION object:nil];
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     User *user = [User currentUser];
+    UIViewController *vc;
 
     if (user != nil) {
         NSLog(@"Welcome %@", user.name);
-        self.window.rootViewController = [[TweetsViewController alloc] init];
+        vc = [[TweetsViewController alloc] init];
     } else {
         NSLog(@"Not logged in");
-        self.window.rootViewController = [[LoginViewController alloc] init];
+        vc = [[LoginViewController alloc] init];
     }
 
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
     [self.window makeKeyAndVisible];
     return YES;
 }
 
 - (void)userDidLogout {
-    self.window.rootViewController = [[LoginViewController alloc] init];
+    UIViewController *vc = [[LoginViewController alloc] init];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self.window makeKeyAndVisible];
+}
+
+- (void)userDidLogin {
+    UIViewController *vc = [[TweetsViewController alloc] init];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self.window makeKeyAndVisible];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

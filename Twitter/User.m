@@ -26,7 +26,7 @@ NSString * const USER_DID_LOGOUT_NOTIFICATION = @"UserDidLogoutNotification";
     if (self) {
         self.dictionary = dictionary;
         self.name = dictionary[@"name"];
-        self.screenName = dictionary[@"screen_name"];
+        self.username = dictionary[@"screen_name"];
         self.profileImageURL = dictionary[@"profile_image_url"];
         self.tagline = dictionary[@"description"];
     }

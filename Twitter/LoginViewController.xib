@@ -29,6 +29,7 @@
                 <constraint firstAttribute="centerX" secondItem="wIQ-5d-I3h" secondAttribute="centerX" id="I2n-fb-ZUt"/>
                 <constraint firstItem="wIQ-5d-I3h" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="75" id="PCK-wZ-lAp"/>
             </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <point key="canvasLocation" x="139" y="155"/>
         </view>
     </objects>
