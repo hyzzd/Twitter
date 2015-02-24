@@ -1,0 +1,2583 @@
+2015-02-24 00:47:50.113 Twitter[16874:320917] Got the request token!
+2015-02-24 00:47:52.890 Twitter[16874:320917] Got the access token!
+2015-02-24 00:47:52.940 Twitter[16874:320917] Current user: {
+    "contributors_enabled" = 0;
+    "created_at" = "Tue Feb 24 08:35:42 +0000 2015";
+    "default_profile" = 1;
+    "default_profile_image" = 1;
+    description = "";
+    entities =     {
+        description =         {
+            urls =             (
+            );
+        };
+    };
+    "favourites_count" = 0;
+    "follow_request_sent" = 0;
+    "followers_count" = 1;
+    following = 0;
+    "friends_count" = 37;
+    "geo_enabled" = 0;
+    id = 3039148981;
+    "id_str" = 3039148981;
+    "is_translation_enabled" = 0;
+    "is_translator" = 0;
+    lang = en;
+    "listed_count" = 0;
+    location = "";
+    name = "Code Path";
+    notifications = 0;
+    "profile_background_color" = C0DEED;
+    "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme1/bg.png";
+    "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme1/bg.png";
+    "profile_background_tile" = 0;
+    "profile_image_url" = "http://abs.twimg.com/sticky/default_profile_images/default_profile_1_normal.png";
+    "profile_image_url_https" = "https://abs.twimg.com/sticky/default_profile_images/default_profile_1_normal.png";
+    "profile_link_color" = 0084B4;
+    "profile_location" = "<null>";
+    "profile_sidebar_border_color" = C0DEED;
+    "profile_sidebar_fill_color" = DDEEF6;
+    "profile_text_color" = 333333;
+    "profile_use_background_image" = 1;
+    protected = 0;
+    "screen_name" = codepathcode;
+    "statuses_count" = 0;
+    "time_zone" = "<null>";
+    url = "<null>";
+    "utc_offset" = "<null>";
+    verified = 0;
+}
+2015-02-24 00:47:52.965 Twitter[16874:320917] Tweets: (
+        {
+        contributors = "<null>";
+        coordinates = "<null>";
+        "created_at" = "Tue Feb 24 06:31:57 +0000 2015";
+        entities =         {
+            hashtags =             (
+                                {
+                    indices =                     (
+                        55,
+                        73
+                    );
+                    text = FanofaFanTheAlbum;
+                }
+            );
+            symbols =             (
+            );
+            urls =             (
+                                {
+                    "display_url" = "smarturl.it/FOAFTheAlbumi?\U2026";
+                    "expanded_url" = "http://smarturl.it/FOAFTheAlbumi?IQid=DJ";
+                    indices =                     (
+                        74,
+                        96
+                    );
+                    url = "http://t.co/eYGTQzdnnD";
+                }
+            );
+            "user_mentions" =             (
+                                {
+                    id = 119509520;
+                    "id_str" = 119509520;
+                    indices =                     (
+                        21,
+                        32
+                    );
+                    name = "Chris Brown";
+                    "screen_name" = chrisbrown;
+                },
+                                {
+                    id = 22733444;
+                    "id_str" = 22733444;
+                    indices =                     (
+                        37,
+                        42
+                    );
+                    name = "T-Raww";
+                    "screen_name" = Tyga;
+                },
+                                {
+                    id = 26191241;
+                    "id_str" = 26191241;
+                    indices =                     (
+                        97,
+                        113
+                    );
+                    name = "Mike G\U2122\U200e";
+                    "screen_name" = "Nitevision_Mgmt";
+                }
+            );
+        };
+        "favorite_count" = 834;
+        favorited = 0;
+        geo = "<null>";
+        id = 570108854890950656;
+        "id_str" = 570108854890950656;
+        "in_reply_to_screen_name" = "<null>";
+        "in_reply_to_status_id" = "<null>";
+        "in_reply_to_status_id_str" = "<null>";
+        "in_reply_to_user_id" = "<null>";
+        "in_reply_to_user_id_str" = "<null>";
+        lang = en;
+        place = "<null>";
+        "possibly_sensitive" = 0;
+        "possibly_sensitive_appealable" = 0;
+        "retweet_count" = 525;
+        retweeted = 0;
+        source = "<a href=\"http://tweetlogix.com\" rel=\"nofollow\">Tweetlogix</a>";
+        text = "Support my brothers\U2019 @ChrisBrown and @Tyga\U2019s new album #FanofaFanTheAlbum http://t.co/eYGTQzdnnD @nitevision_mgmt";
+        truncated = 0;
+        user =         {
+            "contributors_enabled" = 0;
+            "created_at" = "Sat Mar 07 02:02:31 +0000 2009";
+            "default_profile" = 0;
+            "default_profile_image" = 0;
+            description = "My name is Kevin Hart and I WORK HARD!!! That pretty much sums me up!!! Everybody Wants To Be Famous But Nobody Wants To Do The Work";
+            entities =             {
+                description =                 {
+                    urls =                     (
+                    );
+                };
+                url =                 {
+                    urls =                     (
+                                                {
+                            "display_url" = "kevinhartnation.com";
+                            "expanded_url" = "http://www.kevinhartnation.com";
+                            indices =                             (
+                                0,
+                                22
+                            );
+                            url = "http://t.co/8eSZFIFqq2";
+                        }
+                    );
+                };
+            };
+            "favourites_count" = 18;
+            "follow_request_sent" = 0;
+            "followers_count" = 16938828;
+            following = 1;
+            "friends_count" = 496;
+            "geo_enabled" = 0;
+            id = 23151437;
+            "id_str" = 23151437;
+            "is_translation_enabled" = 1;
+            "is_translator" = 0;
+            lang = en;
+            "listed_count" = 21355;
+            location = "Philly/LA";
+            name = "Kevin Hart";
+            notifications = 0;
+            "profile_background_color" = 131516;
+            "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_tile" = 1;
+            "profile_banner_url" = "https://pbs.twimg.com/profile_banners/23151437/1424266489";
+            "profile_image_url" = "http://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_image_url_https" = "https://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_link_color" = 009999;
+            "profile_location" = "<null>";
+            "profile_sidebar_border_color" = EEEEEE;
+            "profile_sidebar_fill_color" = EFEFEF;
+            "profile_text_color" = 333333;
+            "profile_use_background_image" = 1;
+            protected = 0;
+            "screen_name" = KevinHart4real;
+            "statuses_count" = 24071;
+            "time_zone" = "Pacific Time (US & Canada)";
+            url = "http://t.co/8eSZFIFqq2";
+            "utc_offset" = "-28800";
+            verified = 1;
+        };
+    },
+        {
+        contributors = "<null>";
+        coordinates = "<null>";
+        "created_at" = "Tue Feb 24 04:27:13 +0000 2015";
+        entities =         {
+            hashtags =             (
+                                {
+                    indices =                     (
+                        38,
+                        50
+                    );
+                    text = FamilyNight;
+                },
+                                {
+                    indices =                     (
+                        51,
+                        57
+                    );
+                    text = Harts;
+                }
+            );
+            symbols =             (
+            );
+            urls =             (
+                                {
+                    "display_url" = "hartgram.com/a1a";
+                    "expanded_url" = "http://hartgram.com/a1a";
+                    indices =                     (
+                        58,
+                        80
+                    );
+                    url = "http://t.co/njf4PCnX4P";
+                }
+            );
+            "user_mentions" =             (
+            );
+        };
+        "favorite_count" = 446;
+        favorited = 0;
+        geo = "<null>";
+        id = 570077464287780865;
+        "id_str" = 570077464287780865;
+        "in_reply_to_screen_name" = "<null>";
+        "in_reply_to_status_id" = "<null>";
+        "in_reply_to_status_id_str" = "<null>";
+        "in_reply_to_user_id" = "<null>";
+        "in_reply_to_user_id_str" = "<null>";
+        lang = en;
+        place = "<null>";
+        "possibly_sensitive" = 0;
+        "possibly_sensitive_appealable" = 0;
+        "retweet_count" = 75;
+        retweeted = 0;
+        source = "<a href=\"http://www.postargram.com\" rel=\"nofollow\">Postargram Photo Notification</a>";
+        text = "Sitting CourtSide with my mini me.... #FamilyNight #Harts http://t.co/njf4PCnX4P";
+        truncated = 0;
+        user =         {
+            "contributors_enabled" = 0;
+            "created_at" = "Sat Mar 07 02:02:31 +0000 2009";
+            "default_profile" = 0;
+            "default_profile_image" = 0;
+            description = "My name is Kevin Hart and I WORK HARD!!! That pretty much sums me up!!! Everybody Wants To Be Famous But Nobody Wants To Do The Work";
+            entities =             {
+                description =                 {
+                    urls =                     (
+                    );
+                };
+                url =                 {
+                    urls =                     (
+                                                {
+                            "display_url" = "kevinhartnation.com";
+                            "expanded_url" = "http://www.kevinhartnation.com";
+                            indices =                             (
+                                0,
+                                22
+                            );
+                            url = "http://t.co/8eSZFIFqq2";
+                        }
+                    );
+                };
+            };
+            "favourites_count" = 18;
+            "follow_request_sent" = 0;
+            "followers_count" = 16938828;
+            following = 1;
+            "friends_count" = 496;
+            "geo_enabled" = 0;
+            id = 23151437;
+            "id_str" = 23151437;
+            "is_translation_enabled" = 1;
+            "is_translator" = 0;
+            lang = en;
+            "listed_count" = 21355;
+            location = "Philly/LA";
+            name = "Kevin Hart";
+            notifications = 0;
+            "profile_background_color" = 131516;
+            "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_tile" = 1;
+            "profile_banner_url" = "https://pbs.twimg.com/profile_banners/23151437/1424266489";
+            "profile_image_url" = "http://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_image_url_https" = "https://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_link_color" = 009999;
+            "profile_location" = "<null>";
+            "profile_sidebar_border_color" = EEEEEE;
+            "profile_sidebar_fill_color" = EFEFEF;
+            "profile_text_color" = 333333;
+            "profile_use_background_image" = 1;
+            protected = 0;
+            "screen_name" = KevinHart4real;
+            "statuses_count" = 24071;
+            "time_zone" = "Pacific Time (US & Canada)";
+            url = "http://t.co/8eSZFIFqq2";
+            "utc_offset" = "-28800";
+            verified = 1;
+        };
+    },
+        {
+        contributors = "<null>";
+        coordinates = "<null>";
+        "created_at" = "Tue Feb 24 02:19:43 +0000 2015";
+        entities =         {
+            hashtags =             (
+                                {
+                    indices =                     (
+                        21,
+                        29
+                    );
+                    text = DopePic;
+                },
+                                {
+                    indices =                     (
+                        30,
+                        44
+                    );
+                    text = CandidMoments;
+                }
+            );
+            symbols =             (
+            );
+            urls =             (
+                                {
+                    "display_url" = "hartgram.com/a19";
+                    "expanded_url" = "http://hartgram.com/a19";
+                    indices =                     (
+                        45,
+                        67
+                    );
+                    url = "http://t.co/sNwotGJMzH";
+                }
+            );
+            "user_mentions" =             (
+            );
+        };
+        "favorite_count" = 434;
+        favorited = 0;
+        geo = "<null>";
+        id = 570045376461320192;
+        "id_str" = 570045376461320192;
+        "in_reply_to_screen_name" = "<null>";
+        "in_reply_to_status_id" = "<null>";
+        "in_reply_to_status_id_str" = "<null>";
+        "in_reply_to_user_id" = "<null>";
+        "in_reply_to_user_id_str" = "<null>";
+        lang = sk;
+        place = "<null>";
+        "possibly_sensitive" = 0;
+        "possibly_sensitive_appealable" = 0;
+        "retweet_count" = 99;
+        retweeted = 0;
+        source = "<a href=\"http://www.postargram.com\" rel=\"nofollow\">Postargram Photo Notification</a>";
+        text = "HOV &amp; B &amp; Me #DopePic #CandidMoments http://t.co/sNwotGJMzH";
+        truncated = 0;
+        user =         {
+            "contributors_enabled" = 0;
+            "created_at" = "Sat Mar 07 02:02:31 +0000 2009";
+            "default_profile" = 0;
+            "default_profile_image" = 0;
+            description = "My name is Kevin Hart and I WORK HARD!!! That pretty much sums me up!!! Everybody Wants To Be Famous But Nobody Wants To Do The Work";
+            entities =             {
+                description =                 {
+                    urls =                     (
+                    );
+                };
+                url =                 {
+                    urls =                     (
+                                                {
+                            "display_url" = "kevinhartnation.com";
+                            "expanded_url" = "http://www.kevinhartnation.com";
+                            indices =                             (
+                                0,
+                                22
+                            );
+                            url = "http://t.co/8eSZFIFqq2";
+                        }
+                    );
+                };
+            };
+            "favourites_count" = 18;
+            "follow_request_sent" = 0;
+            "followers_count" = 16938828;
+            following = 1;
+            "friends_count" = 496;
+            "geo_enabled" = 0;
+            id = 23151437;
+            "id_str" = 23151437;
+            "is_translation_enabled" = 1;
+            "is_translator" = 0;
+            lang = en;
+            "listed_count" = 21355;
+            location = "Philly/LA";
+            name = "Kevin Hart";
+            notifications = 0;
+            "profile_background_color" = 131516;
+            "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_tile" = 1;
+            "profile_banner_url" = "https://pbs.twimg.com/profile_banners/23151437/1424266489";
+            "profile_image_url" = "http://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_image_url_https" = "https://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_link_color" = 009999;
+            "profile_location" = "<null>";
+            "profile_sidebar_border_color" = EEEEEE;
+            "profile_sidebar_fill_color" = EFEFEF;
+            "profile_text_color" = 333333;
+            "profile_use_background_image" = 1;
+            protected = 0;
+            "screen_name" = KevinHart4real;
+            "statuses_count" = 24071;
+            "time_zone" = "Pacific Time (US & Canada)";
+            url = "http://t.co/8eSZFIFqq2";
+            "utc_offset" = "-28800";
+            verified = 1;
+        };
+    },
+        {
+        contributors = "<null>";
+        coordinates = "<null>";
+        "created_at" = "Tue Feb 24 01:00:46 +0000 2015";
+        entities =         {
+            hashtags =             (
+            );
+            symbols =             (
+            );
+            urls =             (
+            );
+            "user_mentions" =             (
+            );
+        };
+        "favorite_count" = 1902;
+        favorited = 0;
+        geo = "<null>";
+        id = 570025510341734402;
+        "id_str" = 570025510341734402;
+        "in_reply_to_screen_name" = "<null>";
+        "in_reply_to_status_id" = "<null>";
+        "in_reply_to_status_id_str" = "<null>";
+        "in_reply_to_user_id" = "<null>";
+        "in_reply_to_user_id_str" = "<null>";
+        lang = en;
+        place = "<null>";
+        "retweet_count" = 394;
+        retweeted = 0;
+        source = "<a href=\"http://tweetlogix.com\" rel=\"nofollow\">Tweetlogix</a>";
+        text = "Finally back in the gym....I missed damn near 5 days straight....I feel disgusting";
+        truncated = 0;
+        user =         {
+            "contributors_enabled" = 0;
+            "created_at" = "Sat Mar 07 02:02:31 +0000 2009";
+            "default_profile" = 0;
+            "default_profile_image" = 0;
+            description = "My name is Kevin Hart and I WORK HARD!!! That pretty much sums me up!!! Everybody Wants To Be Famous But Nobody Wants To Do The Work";
+            entities =             {
+                description =                 {
+                    urls =                     (
+                    );
+                };
+                url =                 {
+                    urls =                     (
+                                                {
+                            "display_url" = "kevinhartnation.com";
+                            "expanded_url" = "http://www.kevinhartnation.com";
+                            indices =                             (
+                                0,
+                                22
+                            );
+                            url = "http://t.co/8eSZFIFqq2";
+                        }
+                    );
+                };
+            };
+            "favourites_count" = 18;
+            "follow_request_sent" = 0;
+            "followers_count" = 16938828;
+            following = 1;
+            "friends_count" = 496;
+            "geo_enabled" = 0;
+            id = 23151437;
+            "id_str" = 23151437;
+            "is_translation_enabled" = 1;
+            "is_translator" = 0;
+            lang = en;
+            "listed_count" = 21355;
+            location = "Philly/LA";
+            name = "Kevin Hart";
+            notifications = 0;
+            "profile_background_color" = 131516;
+            "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_tile" = 1;
+            "profile_banner_url" = "https://pbs.twimg.com/profile_banners/23151437/1424266489";
+            "profile_image_url" = "http://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_image_url_https" = "https://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_link_color" = 009999;
+            "profile_location" = "<null>";
+            "profile_sidebar_border_color" = EEEEEE;
+            "profile_sidebar_fill_color" = EFEFEF;
+            "profile_text_color" = 333333;
+            "profile_use_background_image" = 1;
+            protected = 0;
+            "screen_name" = KevinHart4real;
+            "statuses_count" = 24071;
+            "time_zone" = "Pacific Time (US & Canada)";
+            url = "http://t.co/8eSZFIFqq2";
+            "utc_offset" = "-28800";
+            verified = 1;
+        };
+    },
+        {
+        contributors = "<null>";
+        coordinates = "<null>";
+        "created_at" = "Tue Feb 24 00:19:33 +0000 2015";
+        entities =         {
+            hashtags =             (
+                                {
+                    indices =                     (
+                        33,
+                        37
+                    );
+                    text = FML;
+                }
+            );
+            symbols =             (
+            );
+            urls =             (
+            );
+            "user_mentions" =             (
+            );
+        };
+        "favorite_count" = 2291;
+        favorited = 0;
+        geo = "<null>";
+        id = 570015136544501760;
+        "id_str" = 570015136544501760;
+        "in_reply_to_screen_name" = "<null>";
+        "in_reply_to_status_id" = "<null>";
+        "in_reply_to_status_id_str" = "<null>";
+        "in_reply_to_user_id" = "<null>";
+        "in_reply_to_user_id_str" = "<null>";
+        lang = en;
+        place = "<null>";
+        "retweet_count" = 475;
+        retweeted = 0;
+        source = "<a href=\"http://tweetlogix.com\" rel=\"nofollow\">Tweetlogix</a>";
+        text = "I just stumped my pinky toe..... #FML";
+        truncated = 0;
+        user =         {
+            "contributors_enabled" = 0;
+            "created_at" = "Sat Mar 07 02:02:31 +0000 2009";
+            "default_profile" = 0;
+            "default_profile_image" = 0;
+            description = "My name is Kevin Hart and I WORK HARD!!! That pretty much sums me up!!! Everybody Wants To Be Famous But Nobody Wants To Do The Work";
+            entities =             {
+                description =                 {
+                    urls =                     (
+                    );
+                };
+                url =                 {
+                    urls =                     (
+                                                {
+                            "display_url" = "kevinhartnation.com";
+                            "expanded_url" = "http://www.kevinhartnation.com";
+                            indices =                             (
+                                0,
+                                22
+                            );
+                            url = "http://t.co/8eSZFIFqq2";
+                        }
+                    );
+                };
+            };
+            "favourites_count" = 18;
+            "follow_request_sent" = 0;
+            "followers_count" = 16938828;
+            following = 1;
+            "friends_count" = 496;
+            "geo_enabled" = 0;
+            id = 23151437;
+            "id_str" = 23151437;
+            "is_translation_enabled" = 1;
+            "is_translator" = 0;
+            lang = en;
+            "listed_count" = 21355;
+            location = "Philly/LA";
+            name = "Kevin Hart";
+            notifications = 0;
+            "profile_background_color" = 131516;
+            "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_tile" = 1;
+            "profile_banner_url" = "https://pbs.twimg.com/profile_banners/23151437/1424266489";
+            "profile_image_url" = "http://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_image_url_https" = "https://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_link_color" = 009999;
+            "profile_location" = "<null>";
+            "profile_sidebar_border_color" = EEEEEE;
+            "profile_sidebar_fill_color" = EFEFEF;
+            "profile_text_color" = 333333;
+            "profile_use_background_image" = 1;
+            protected = 0;
+            "screen_name" = KevinHart4real;
+            "statuses_count" = 24071;
+            "time_zone" = "Pacific Time (US & Canada)";
+            url = "http://t.co/8eSZFIFqq2";
+            "utc_offset" = "-28800";
+            verified = 1;
+        };
+    },
+        {
+        contributors = "<null>";
+        coordinates = "<null>";
+        "created_at" = "Mon Feb 23 19:14:07 +0000 2015";
+        entities =         {
+            hashtags =             (
+                                {
+                    indices =                     (
+                        54,
+                        61
+                    );
+                    text = Oscars;
+                },
+                                {
+                    indices =                     (
+                        62,
+                        72
+                    );
+                    text = Comedians;
+                },
+                                {
+                    indices =                     (
+                        73,
+                        81
+                    );
+                    text = Amazing;
+                },
+                                {
+                    indices =                     (
+                        82,
+                        90
+                    );
+                    text = DopePic;
+                }
+            );
+            symbols =             (
+            );
+            urls =             (
+                                {
+                    "display_url" = "hartgram.com/a0E";
+                    "expanded_url" = "http://hartgram.com/a0E";
+                    indices =                     (
+                        91,
+                        113
+                    );
+                    url = "http://t.co/vjSb4wjIpz";
+                }
+            );
+            "user_mentions" =             (
+            );
+        };
+        "favorite_count" = 473;
+        favorited = 0;
+        geo = "<null>";
+        id = 569938269640601600;
+        "id_str" = 569938269640601600;
+        "in_reply_to_screen_name" = "<null>";
+        "in_reply_to_status_id" = "<null>";
+        "in_reply_to_status_id_str" = "<null>";
+        "in_reply_to_user_id" = "<null>";
+        "in_reply_to_user_id_str" = "<null>";
+        lang = en;
+        place = "<null>";
+        "possibly_sensitive" = 0;
+        "possibly_sensitive_appealable" = 0;
+        "retweet_count" = 90;
+        retweeted = 0;
+        source = "<a href=\"http://www.postargram.com\" rel=\"nofollow\">Postargram Photo Notification</a>";
+        text = "Dane cook, Steve Martin, Patton Oswald and myself.... #Oscars #Comedians #Amazing #DopePic http://t.co/vjSb4wjIpz";
+        truncated = 0;
+        user =         {
+            "contributors_enabled" = 0;
+            "created_at" = "Sat Mar 07 02:02:31 +0000 2009";
+            "default_profile" = 0;
+            "default_profile_image" = 0;
+            description = "My name is Kevin Hart and I WORK HARD!!! That pretty much sums me up!!! Everybody Wants To Be Famous But Nobody Wants To Do The Work";
+            entities =             {
+                description =                 {
+                    urls =                     (
+                    );
+                };
+                url =                 {
+                    urls =                     (
+                                                {
+                            "display_url" = "kevinhartnation.com";
+                            "expanded_url" = "http://www.kevinhartnation.com";
+                            indices =                             (
+                                0,
+                                22
+                            );
+                            url = "http://t.co/8eSZFIFqq2";
+                        }
+                    );
+                };
+            };
+            "favourites_count" = 18;
+            "follow_request_sent" = 0;
+            "followers_count" = 16938828;
+            following = 1;
+            "friends_count" = 496;
+            "geo_enabled" = 0;
+            id = 23151437;
+            "id_str" = 23151437;
+            "is_translation_enabled" = 1;
+            "is_translator" = 0;
+            lang = en;
+            "listed_count" = 21355;
+            location = "Philly/LA";
+            name = "Kevin Hart";
+            notifications = 0;
+            "profile_background_color" = 131516;
+            "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_tile" = 1;
+            "profile_banner_url" = "https://pbs.twimg.com/profile_banners/23151437/1424266489";
+            "profile_image_url" = "http://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_image_url_https" = "https://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_link_color" = 009999;
+            "profile_location" = "<null>";
+            "profile_sidebar_border_color" = EEEEEE;
+            "profile_sidebar_fill_color" = EFEFEF;
+            "profile_text_color" = 333333;
+            "profile_use_background_image" = 1;
+            protected = 0;
+            "screen_name" = KevinHart4real;
+            "statuses_count" = 24071;
+            "time_zone" = "Pacific Time (US & Canada)";
+            url = "http://t.co/8eSZFIFqq2";
+            "utc_offset" = "-28800";
+            verified = 1;
+        };
+    },
+        {
+        contributors = "<null>";
+        coordinates = "<null>";
+        "created_at" = "Mon Feb 23 17:49:44 +0000 2015";
+        entities =         {
+            hashtags =             (
+            );
+            symbols =             (
+            );
+            urls =             (
+                                {
+                    "display_url" = "hartgram.com/a0D";
+                    "expanded_url" = "http://hartgram.com/a0D";
+                    indices =                     (
+                        120,
+                        142
+                    );
+                    url = "http://t.co/E8rWaKWf9j";
+                }
+            );
+            "user_mentions" =             (
+                                {
+                    id = 320020109;
+                    "id_str" = 320020109;
+                    indices =                     (
+                        32,
+                        44
+                    );
+                    name = "Amy Lynch";
+                    "screen_name" = charlysmama;
+                },
+                                {
+                    id = 369514419;
+                    "id_str" = 369514419;
+                    indices =                     (
+                        65,
+                        80
+                    );
+                    name = LANVIN;
+                    "screen_name" = LANVINofficial;
+                }
+            );
+        };
+        "favorite_count" = 330;
+        favorited = 0;
+        geo = "<null>";
+        id = 569917037658509312;
+        "id_str" = 569917037658509312;
+        "in_reply_to_screen_name" = "<null>";
+        "in_reply_to_status_id" = "<null>";
+        "in_reply_to_status_id_str" = "<null>";
+        "in_reply_to_user_id" = "<null>";
+        "in_reply_to_user_id_str" = "<null>";
+        lang = en;
+        place = "<null>";
+        "possibly_sensitive" = 0;
+        "possibly_sensitive_appealable" = 0;
+        "retweet_count" = 64;
+        retweeted = 0;
+        source = "<a href=\"http://www.postargram.com\" rel=\"nofollow\">Postargram Photo Notification</a>";
+        text = "That boy was clean....styled by @charlysmama &amp; I was wearing @lanvinofficial with some Christian Dior Shoes.... ... http://t.co/E8rWaKWf9j";
+        truncated = 0;
+        user =         {
+            "contributors_enabled" = 0;
+            "created_at" = "Sat Mar 07 02:02:31 +0000 2009";
+            "default_profile" = 0;
+            "default_profile_image" = 0;
+            description = "My name is Kevin Hart and I WORK HARD!!! That pretty much sums me up!!! Everybody Wants To Be Famous But Nobody Wants To Do The Work";
+            entities =             {
+                description =                 {
+                    urls =                     (
+                    );
+                };
+                url =                 {
+                    urls =                     (
+                                                {
+                            "display_url" = "kevinhartnation.com";
+                            "expanded_url" = "http://www.kevinhartnation.com";
+                            indices =                             (
+                                0,
+                                22
+                            );
+                            url = "http://t.co/8eSZFIFqq2";
+                        }
+                    );
+                };
+            };
+            "favourites_count" = 18;
+            "follow_request_sent" = 0;
+            "followers_count" = 16938828;
+            following = 1;
+            "friends_count" = 496;
+            "geo_enabled" = 0;
+            id = 23151437;
+            "id_str" = 23151437;
+            "is_translation_enabled" = 1;
+            "is_translator" = 0;
+            lang = en;
+            "listed_count" = 21355;
+            location = "Philly/LA";
+            name = "Kevin Hart";
+            notifications = 0;
+            "profile_background_color" = 131516;
+            "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_tile" = 1;
+            "profile_banner_url" = "https://pbs.twimg.com/profile_banners/23151437/1424266489";
+            "profile_image_url" = "http://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_image_url_https" = "https://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_link_color" = 009999;
+            "profile_location" = "<null>";
+            "profile_sidebar_border_color" = EEEEEE;
+            "profile_sidebar_fill_color" = EFEFEF;
+            "profile_text_color" = 333333;
+            "profile_use_background_image" = 1;
+            protected = 0;
+            "screen_name" = KevinHart4real;
+            "statuses_count" = 24071;
+            "time_zone" = "Pacific Time (US & Canada)";
+            url = "http://t.co/8eSZFIFqq2";
+            "utc_offset" = "-28800";
+            verified = 1;
+        };
+    },
+        {
+        contributors = "<null>";
+        coordinates = "<null>";
+        "created_at" = "Mon Feb 23 17:25:10 +0000 2015";
+        entities =         {
+            hashtags =             (
+            );
+            symbols =             (
+            );
+            urls =             (
+                                {
+                    "display_url" = "hartgram.com/a0C";
+                    "expanded_url" = "http://hartgram.com/a0C";
+                    indices =                     (
+                        114,
+                        136
+                    );
+                    url = "http://t.co/tMnYL2Sy8a";
+                }
+            );
+            "user_mentions" =             (
+            );
+        };
+        "favorite_count" = 618;
+        favorited = 0;
+        geo = "<null>";
+        id = 569910853555720192;
+        "id_str" = 569910853555720192;
+        "in_reply_to_screen_name" = "<null>";
+        "in_reply_to_status_id" = "<null>";
+        "in_reply_to_status_id_str" = "<null>";
+        "in_reply_to_user_id" = "<null>";
+        "in_reply_to_user_id_str" = "<null>";
+        lang = en;
+        place = "<null>";
+        "possibly_sensitive" = 0;
+        "possibly_sensitive_appealable" = 0;
+        "retweet_count" = 94;
+        retweeted = 0;
+        source = "<a href=\"http://www.postargram.com\" rel=\"nofollow\">Postargram Photo Notification</a>";
+        text = "I had the privilege of meeting the legendary \"Don Rickles\" last night....the fact that he knew who I was blew ... http://t.co/tMnYL2Sy8a";
+        truncated = 0;
+        user =         {
+            "contributors_enabled" = 0;
+            "created_at" = "Sat Mar 07 02:02:31 +0000 2009";
+            "default_profile" = 0;
+            "default_profile_image" = 0;
+            description = "My name is Kevin Hart and I WORK HARD!!! That pretty much sums me up!!! Everybody Wants To Be Famous But Nobody Wants To Do The Work";
+            entities =             {
+                description =                 {
+                    urls =                     (
+                    );
+                };
+                url =                 {
+                    urls =                     (
+                                                {
+                            "display_url" = "kevinhartnation.com";
+                            "expanded_url" = "http://www.kevinhartnation.com";
+                            indices =                             (
+                                0,
+                                22
+                            );
+                            url = "http://t.co/8eSZFIFqq2";
+                        }
+                    );
+                };
+            };
+            "favourites_count" = 18;
+            "follow_request_sent" = 0;
+            "followers_count" = 16938828;
+            following = 1;
+            "friends_count" = 496;
+            "geo_enabled" = 0;
+            id = 23151437;
+            "id_str" = 23151437;
+            "is_translation_enabled" = 1;
+            "is_translator" = 0;
+            lang = en;
+            "listed_count" = 21355;
+            location = "Philly/LA";
+            name = "Kevin Hart";
+            notifications = 0;
+            "profile_background_color" = 131516;
+            "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_tile" = 1;
+            "profile_banner_url" = "https://pbs.twimg.com/profile_banners/23151437/1424266489";
+            "profile_image_url" = "http://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_image_url_https" = "https://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_link_color" = 009999;
+            "profile_location" = "<null>";
+            "profile_sidebar_border_color" = EEEEEE;
+            "profile_sidebar_fill_color" = EFEFEF;
+            "profile_text_color" = 333333;
+            "profile_use_background_image" = 1;
+            protected = 0;
+            "screen_name" = KevinHart4real;
+            "statuses_count" = 24071;
+            "time_zone" = "Pacific Time (US & Canada)";
+            url = "http://t.co/8eSZFIFqq2";
+            "utc_offset" = "-28800";
+            verified = 1;
+        };
+    },
+        {
+        contributors = "<null>";
+        coordinates = "<null>";
+        "created_at" = "Mon Feb 23 06:12:54 +0000 2015";
+        entities =         {
+            hashtags =             (
+                                {
+                    indices =                     (
+                        0,
+                        8
+                    );
+                    text = DopePic;
+                },
+                                {
+                    indices =                     (
+                        9,
+                        21
+                    );
+                    text = EddieMurphy;
+                },
+                                {
+                    indices =                     (
+                        22,
+                        46
+                    );
+                    text = TheReasonWhyImAcomedian;
+                },
+                                {
+                    indices =                     (
+                        47,
+                        54
+                    );
+                    text = Oscars;
+                },
+                                {
+                    indices =                     (
+                        55,
+                        60
+                    );
+                    text = Epic;
+                }
+            );
+            symbols =             (
+            );
+            urls =             (
+                                {
+                    "display_url" = "hartgram.com/a0v";
+                    "expanded_url" = "http://hartgram.com/a0v";
+                    indices =                     (
+                        61,
+                        83
+                    );
+                    url = "http://t.co/p53pAD8I48";
+                }
+            );
+            "user_mentions" =             (
+            );
+        };
+        "favorite_count" = 912;
+        favorited = 0;
+        geo = "<null>";
+        id = 569741670977134592;
+        "id_str" = 569741670977134592;
+        "in_reply_to_screen_name" = "<null>";
+        "in_reply_to_status_id" = "<null>";
+        "in_reply_to_status_id_str" = "<null>";
+        "in_reply_to_user_id" = "<null>";
+        "in_reply_to_user_id_str" = "<null>";
+        lang = und;
+        place = "<null>";
+        "possibly_sensitive" = 0;
+        "possibly_sensitive_appealable" = 0;
+        "retweet_count" = 201;
+        retweeted = 0;
+        source = "<a href=\"http://www.postargram.com\" rel=\"nofollow\">Postargram Photo Notification</a>";
+        text = "#DopePic #EddieMurphy #TheReasonWhyImAcomedian #Oscars #Epic http://t.co/p53pAD8I48";
+        truncated = 0;
+        user =         {
+            "contributors_enabled" = 0;
+            "created_at" = "Sat Mar 07 02:02:31 +0000 2009";
+            "default_profile" = 0;
+            "default_profile_image" = 0;
+            description = "My name is Kevin Hart and I WORK HARD!!! That pretty much sums me up!!! Everybody Wants To Be Famous But Nobody Wants To Do The Work";
+            entities =             {
+                description =                 {
+                    urls =                     (
+                    );
+                };
+                url =                 {
+                    urls =                     (
+                                                {
+                            "display_url" = "kevinhartnation.com";
+                            "expanded_url" = "http://www.kevinhartnation.com";
+                            indices =                             (
+                                0,
+                                22
+                            );
+                            url = "http://t.co/8eSZFIFqq2";
+                        }
+                    );
+                };
+            };
+            "favourites_count" = 18;
+            "follow_request_sent" = 0;
+            "followers_count" = 16938828;
+            following = 1;
+            "friends_count" = 496;
+            "geo_enabled" = 0;
+            id = 23151437;
+            "id_str" = 23151437;
+            "is_translation_enabled" = 1;
+            "is_translator" = 0;
+            lang = en;
+            "listed_count" = 21355;
+            location = "Philly/LA";
+            name = "Kevin Hart";
+            notifications = 0;
+            "profile_background_color" = 131516;
+            "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_tile" = 1;
+            "profile_banner_url" = "https://pbs.twimg.com/profile_banners/23151437/1424266489";
+            "profile_image_url" = "http://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_image_url_https" = "https://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_link_color" = 009999;
+            "profile_location" = "<null>";
+            "profile_sidebar_border_color" = EEEEEE;
+            "profile_sidebar_fill_color" = EFEFEF;
+            "profile_text_color" = 333333;
+            "profile_use_background_image" = 1;
+            protected = 0;
+            "screen_name" = KevinHart4real;
+            "statuses_count" = 24071;
+            "time_zone" = "Pacific Time (US & Canada)";
+            url = "http://t.co/8eSZFIFqq2";
+            "utc_offset" = "-28800";
+            verified = 1;
+        };
+    },
+        {
+        contributors = "<null>";
+        coordinates = "<null>";
+        "created_at" = "Mon Feb 23 00:41:28 +0000 2015";
+        entities =         {
+            hashtags =             (
+                                {
+                    indices =                     (
+                        0,
+                        17
+                    );
+                    text = RedCarpetKillers;
+                },
+                                {
+                    indices =                     (
+                        18,
+                        25
+                    );
+                    text = Oscars;
+                }
+            );
+            symbols =             (
+            );
+            urls =             (
+                                {
+                    "display_url" = "hartgram.com/a0p";
+                    "expanded_url" = "http://hartgram.com/a0p";
+                    indices =                     (
+                        26,
+                        48
+                    );
+                    url = "http://t.co/CA55FRVkT1";
+                }
+            );
+            "user_mentions" =             (
+            );
+        };
+        "favorite_count" = 930;
+        favorited = 0;
+        geo = "<null>";
+        id = 569658264809373698;
+        "id_str" = 569658264809373698;
+        "in_reply_to_screen_name" = "<null>";
+        "in_reply_to_status_id" = "<null>";
+        "in_reply_to_status_id_str" = "<null>";
+        "in_reply_to_user_id" = "<null>";
+        "in_reply_to_user_id_str" = "<null>";
+        lang = und;
+        place = "<null>";
+        "possibly_sensitive" = 0;
+        "possibly_sensitive_appealable" = 0;
+        "retweet_count" = 190;
+        retweeted = 0;
+        source = "<a href=\"http://www.postargram.com\" rel=\"nofollow\">Postargram Photo Notification</a>";
+        text = "#RedCarpetKillers #Oscars http://t.co/CA55FRVkT1";
+        truncated = 0;
+        user =         {
+            "contributors_enabled" = 0;
+            "created_at" = "Sat Mar 07 02:02:31 +0000 2009";
+            "default_profile" = 0;
+            "default_profile_image" = 0;
+            description = "My name is Kevin Hart and I WORK HARD!!! That pretty much sums me up!!! Everybody Wants To Be Famous But Nobody Wants To Do The Work";
+            entities =             {
+                description =                 {
+                    urls =                     (
+                    );
+                };
+                url =                 {
+                    urls =                     (
+                                                {
+                            "display_url" = "kevinhartnation.com";
+                            "expanded_url" = "http://www.kevinhartnation.com";
+                            indices =                             (
+                                0,
+                                22
+                            );
+                            url = "http://t.co/8eSZFIFqq2";
+                        }
+                    );
+                };
+            };
+            "favourites_count" = 18;
+            "follow_request_sent" = 0;
+            "followers_count" = 16938828;
+            following = 1;
+            "friends_count" = 496;
+            "geo_enabled" = 0;
+            id = 23151437;
+            "id_str" = 23151437;
+            "is_translation_enabled" = 1;
+            "is_translator" = 0;
+            lang = en;
+            "listed_count" = 21355;
+            location = "Philly/LA";
+            name = "Kevin Hart";
+            notifications = 0;
+            "profile_background_color" = 131516;
+            "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_tile" = 1;
+            "profile_banner_url" = "https://pbs.twimg.com/profile_banners/23151437/1424266489";
+            "profile_image_url" = "http://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_image_url_https" = "https://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_link_color" = 009999;
+            "profile_location" = "<null>";
+            "profile_sidebar_border_color" = EEEEEE;
+            "profile_sidebar_fill_color" = EFEFEF;
+            "profile_text_color" = 333333;
+            "profile_use_background_image" = 1;
+            protected = 0;
+            "screen_name" = KevinHart4real;
+            "statuses_count" = 24071;
+            "time_zone" = "Pacific Time (US & Canada)";
+            url = "http://t.co/8eSZFIFqq2";
+            "utc_offset" = "-28800";
+            verified = 1;
+        };
+    },
+        {
+        contributors = "<null>";
+        coordinates = "<null>";
+        "created_at" = "Sun Feb 22 22:53:03 +0000 2015";
+        entities =         {
+            hashtags =             (
+            );
+            symbols =             (
+            );
+            urls =             (
+            );
+            "user_mentions" =             (
+            );
+        };
+        "favorite_count" = 3186;
+        favorited = 0;
+        geo = "<null>";
+        id = 569630979251240960;
+        "id_str" = 569630979251240960;
+        "in_reply_to_screen_name" = "<null>";
+        "in_reply_to_status_id" = "<null>";
+        "in_reply_to_status_id_str" = "<null>";
+        "in_reply_to_user_id" = "<null>";
+        "in_reply_to_user_id_str" = "<null>";
+        lang = en;
+        place = "<null>";
+        "retweet_count" = 819;
+        retweeted = 0;
+        source = "<a href=\"http://tweetlogix.com\" rel=\"nofollow\">Tweetlogix</a>";
+        text = "P.S Me &amp; My fianc\U00e9 are about to step up in that bitch sharp as hell....operation shut the Red Carpet down is about to be in session";
+        truncated = 0;
+        user =         {
+            "contributors_enabled" = 0;
+            "created_at" = "Sat Mar 07 02:02:31 +0000 2009";
+            "default_profile" = 0;
+            "default_profile_image" = 0;
+            description = "My name is Kevin Hart and I WORK HARD!!! That pretty much sums me up!!! Everybody Wants To Be Famous But Nobody Wants To Do The Work";
+            entities =             {
+                description =                 {
+                    urls =                     (
+                    );
+                };
+                url =                 {
+                    urls =                     (
+                                                {
+                            "display_url" = "kevinhartnation.com";
+                            "expanded_url" = "http://www.kevinhartnation.com";
+                            indices =                             (
+                                0,
+                                22
+                            );
+                            url = "http://t.co/8eSZFIFqq2";
+                        }
+                    );
+                };
+            };
+            "favourites_count" = 18;
+            "follow_request_sent" = 0;
+            "followers_count" = 16938828;
+            following = 1;
+            "friends_count" = 496;
+            "geo_enabled" = 0;
+            id = 23151437;
+            "id_str" = 23151437;
+            "is_translation_enabled" = 1;
+            "is_translator" = 0;
+            lang = en;
+            "listed_count" = 21355;
+            location = "Philly/LA";
+            name = "Kevin Hart";
+            notifications = 0;
+            "profile_background_color" = 131516;
+            "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_tile" = 1;
+            "profile_banner_url" = "https://pbs.twimg.com/profile_banners/23151437/1424266489";
+            "profile_image_url" = "http://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_image_url_https" = "https://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_link_color" = 009999;
+            "profile_location" = "<null>";
+            "profile_sidebar_border_color" = EEEEEE;
+            "profile_sidebar_fill_color" = EFEFEF;
+            "profile_text_color" = 333333;
+            "profile_use_background_image" = 1;
+            protected = 0;
+            "screen_name" = KevinHart4real;
+            "statuses_count" = 24071;
+            "time_zone" = "Pacific Time (US & Canada)";
+            url = "http://t.co/8eSZFIFqq2";
+            "utc_offset" = "-28800";
+            verified = 1;
+        };
+    },
+        {
+        contributors = "<null>";
+        coordinates = "<null>";
+        "created_at" = "Sun Feb 22 22:51:39 +0000 2015";
+        entities =         {
+            hashtags =             (
+            );
+            symbols =             (
+            );
+            urls =             (
+            );
+            "user_mentions" =             (
+            );
+        };
+        "favorite_count" = 4058;
+        favorited = 0;
+        geo = "<null>";
+        id = 569630628313894912;
+        "id_str" = 569630628313894912;
+        "in_reply_to_screen_name" = "<null>";
+        "in_reply_to_status_id" = "<null>";
+        "in_reply_to_status_id_str" = "<null>";
+        "in_reply_to_user_id" = "<null>";
+        "in_reply_to_user_id_str" = "<null>";
+        lang = en;
+        place = "<null>";
+        "retweet_count" = 848;
+        retweeted = 0;
+        source = "<a href=\"http://tweetlogix.com\" rel=\"nofollow\">Tweetlogix</a>";
+        text = "Headed to the Oscars....I'm so damn excited lmao....this is my first Oscars....God is good!!!";
+        truncated = 0;
+        user =         {
+            "contributors_enabled" = 0;
+            "created_at" = "Sat Mar 07 02:02:31 +0000 2009";
+            "default_profile" = 0;
+            "default_profile_image" = 0;
+            description = "My name is Kevin Hart and I WORK HARD!!! That pretty much sums me up!!! Everybody Wants To Be Famous But Nobody Wants To Do The Work";
+            entities =             {
+                description =                 {
+                    urls =                     (
+                    );
+                };
+                url =                 {
+                    urls =                     (
+                                                {
+                            "display_url" = "kevinhartnation.com";
+                            "expanded_url" = "http://www.kevinhartnation.com";
+                            indices =                             (
+                                0,
+                                22
+                            );
+                            url = "http://t.co/8eSZFIFqq2";
+                        }
+                    );
+                };
+            };
+            "favourites_count" = 18;
+            "follow_request_sent" = 0;
+            "followers_count" = 16938828;
+            following = 1;
+            "friends_count" = 496;
+            "geo_enabled" = 0;
+            id = 23151437;
+            "id_str" = 23151437;
+            "is_translation_enabled" = 1;
+            "is_translator" = 0;
+            lang = en;
+            "listed_count" = 21355;
+            location = "Philly/LA";
+            name = "Kevin Hart";
+            notifications = 0;
+            "profile_background_color" = 131516;
+            "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_tile" = 1;
+            "profile_banner_url" = "https://pbs.twimg.com/profile_banners/23151437/1424266489";
+            "profile_image_url" = "http://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_image_url_https" = "https://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_link_color" = 009999;
+            "profile_location" = "<null>";
+            "profile_sidebar_border_color" = EEEEEE;
+            "profile_sidebar_fill_color" = EFEFEF;
+            "profile_text_color" = 333333;
+            "profile_use_background_image" = 1;
+            protected = 0;
+            "screen_name" = KevinHart4real;
+            "statuses_count" = 24071;
+            "time_zone" = "Pacific Time (US & Canada)";
+            url = "http://t.co/8eSZFIFqq2";
+            "utc_offset" = "-28800";
+            verified = 1;
+        };
+    },
+        {
+        contributors = "<null>";
+        coordinates = "<null>";
+        "created_at" = "Sun Feb 22 19:40:34 +0000 2015";
+        entities =         {
+            hashtags =             (
+                                {
+                    indices =                     (
+                        0,
+                        8
+                    );
+                    text = GetHard;
+                },
+                                {
+                    indices =                     (
+                        9,
+                        33
+                    );
+                    text = WillFerrellAndKevinHart;
+                },
+                                {
+                    indices =                     (
+                        34,
+                        50
+                    );
+                    text = ComedyAtItsBest;
+                },
+                                {
+                    indices =                     (
+                        51,
+                        73
+                    );
+                    text = HittingTheaterMarch27;
+                }
+            );
+            symbols =             (
+            );
+            urls =             (
+                                {
+                    "display_url" = "hartgram.com/a0m";
+                    "expanded_url" = "http://hartgram.com/a0m";
+                    indices =                     (
+                        74,
+                        96
+                    );
+                    url = "http://t.co/UguKkcKoxJ";
+                }
+            );
+            "user_mentions" =             (
+            );
+        };
+        "favorite_count" = 622;
+        favorited = 0;
+        geo = "<null>";
+        id = 569582539767091201;
+        "id_str" = 569582539767091201;
+        "in_reply_to_screen_name" = "<null>";
+        "in_reply_to_status_id" = "<null>";
+        "in_reply_to_status_id_str" = "<null>";
+        "in_reply_to_user_id" = "<null>";
+        "in_reply_to_user_id_str" = "<null>";
+        lang = und;
+        place = "<null>";
+        "possibly_sensitive" = 0;
+        "possibly_sensitive_appealable" = 0;
+        "retweet_count" = 183;
+        retweeted = 0;
+        source = "<a href=\"http://www.postargram.com\" rel=\"nofollow\">Postargram Photo Notification</a>";
+        text = "#GetHard #WillFerrellAndKevinHart #ComedyAtItsBest #HittingTheaterMarch27 http://t.co/UguKkcKoxJ";
+        truncated = 0;
+        user =         {
+            "contributors_enabled" = 0;
+            "created_at" = "Sat Mar 07 02:02:31 +0000 2009";
+            "default_profile" = 0;
+            "default_profile_image" = 0;
+            description = "My name is Kevin Hart and I WORK HARD!!! That pretty much sums me up!!! Everybody Wants To Be Famous But Nobody Wants To Do The Work";
+            entities =             {
+                description =                 {
+                    urls =                     (
+                    );
+                };
+                url =                 {
+                    urls =                     (
+                                                {
+                            "display_url" = "kevinhartnation.com";
+                            "expanded_url" = "http://www.kevinhartnation.com";
+                            indices =                             (
+                                0,
+                                22
+                            );
+                            url = "http://t.co/8eSZFIFqq2";
+                        }
+                    );
+                };
+            };
+            "favourites_count" = 18;
+            "follow_request_sent" = 0;
+            "followers_count" = 16938828;
+            following = 1;
+            "friends_count" = 496;
+            "geo_enabled" = 0;
+            id = 23151437;
+            "id_str" = 23151437;
+            "is_translation_enabled" = 1;
+            "is_translator" = 0;
+            lang = en;
+            "listed_count" = 21355;
+            location = "Philly/LA";
+            name = "Kevin Hart";
+            notifications = 0;
+            "profile_background_color" = 131516;
+            "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_tile" = 1;
+            "profile_banner_url" = "https://pbs.twimg.com/profile_banners/23151437/1424266489";
+            "profile_image_url" = "http://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_image_url_https" = "https://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_link_color" = 009999;
+            "profile_location" = "<null>";
+            "profile_sidebar_border_color" = EEEEEE;
+            "profile_sidebar_fill_color" = EFEFEF;
+            "profile_text_color" = 333333;
+            "profile_use_background_image" = 1;
+            protected = 0;
+            "screen_name" = KevinHart4real;
+            "statuses_count" = 24071;
+            "time_zone" = "Pacific Time (US & Canada)";
+            url = "http://t.co/8eSZFIFqq2";
+            "utc_offset" = "-28800";
+            verified = 1;
+        };
+    },
+        {
+        contributors = "<null>";
+        coordinates = "<null>";
+        "created_at" = "Sun Feb 22 08:22:55 +0000 2015";
+        entities =         {
+            hashtags =             (
+            );
+            symbols =             (
+            );
+            urls =             (
+                                {
+                    "display_url" = "hartgram.com/a04";
+                    "expanded_url" = "http://hartgram.com/a04";
+                    indices =                     (
+                        20,
+                        42
+                    );
+                    url = "http://t.co/yEs7EyB5ne";
+                }
+            );
+            "user_mentions" =             (
+            );
+        };
+        "favorite_count" = 555;
+        favorited = 0;
+        geo = "<null>";
+        id = 569412002612793344;
+        "id_str" = 569412002612793344;
+        "in_reply_to_screen_name" = "<null>";
+        "in_reply_to_status_id" = "<null>";
+        "in_reply_to_status_id_str" = "<null>";
+        "in_reply_to_user_id" = "<null>";
+        "in_reply_to_user_id_str" = "<null>";
+        lang = en;
+        place = "<null>";
+        "possibly_sensitive" = 0;
+        "possibly_sensitive_appealable" = 0;
+        "retweet_count" = 83;
+        retweeted = 0;
+        source = "<a href=\"http://www.postargram.com\" rel=\"nofollow\">Postargram Photo Notification</a>";
+        text = "Me &amp; My RIB.... http://t.co/yEs7EyB5ne";
+        truncated = 0;
+        user =         {
+            "contributors_enabled" = 0;
+            "created_at" = "Sat Mar 07 02:02:31 +0000 2009";
+            "default_profile" = 0;
+            "default_profile_image" = 0;
+            description = "My name is Kevin Hart and I WORK HARD!!! That pretty much sums me up!!! Everybody Wants To Be Famous But Nobody Wants To Do The Work";
+            entities =             {
+                description =                 {
+                    urls =                     (
+                    );
+                };
+                url =                 {
+                    urls =                     (
+                                                {
+                            "display_url" = "kevinhartnation.com";
+                            "expanded_url" = "http://www.kevinhartnation.com";
+                            indices =                             (
+                                0,
+                                22
+                            );
+                            url = "http://t.co/8eSZFIFqq2";
+                        }
+                    );
+                };
+            };
+            "favourites_count" = 18;
+            "follow_request_sent" = 0;
+            "followers_count" = 16938828;
+            following = 1;
+            "friends_count" = 496;
+            "geo_enabled" = 0;
+            id = 23151437;
+            "id_str" = 23151437;
+            "is_translation_enabled" = 1;
+            "is_translator" = 0;
+            lang = en;
+            "listed_count" = 21355;
+            location = "Philly/LA";
+            name = "Kevin Hart";
+            notifications = 0;
+            "profile_background_color" = 131516;
+            "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_tile" = 1;
+            "profile_banner_url" = "https://pbs.twimg.com/profile_banners/23151437/1424266489";
+            "profile_image_url" = "http://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_image_url_https" = "https://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_link_color" = 009999;
+            "profile_location" = "<null>";
+            "profile_sidebar_border_color" = EEEEEE;
+            "profile_sidebar_fill_color" = EFEFEF;
+            "profile_text_color" = 333333;
+            "profile_use_background_image" = 1;
+            protected = 0;
+            "screen_name" = KevinHart4real;
+            "statuses_count" = 24071;
+            "time_zone" = "Pacific Time (US & Canada)";
+            url = "http://t.co/8eSZFIFqq2";
+            "utc_offset" = "-28800";
+            verified = 1;
+        };
+    },
+        {
+        contributors = "<null>";
+        coordinates = "<null>";
+        "created_at" = "Sun Feb 22 07:32:02 +0000 2015";
+        entities =         {
+            hashtags =             (
+                                {
+                    indices =                     (
+                        0,
+                        8
+                    );
+                    text = DopePic;
+                }
+            );
+            symbols =             (
+            );
+            urls =             (
+                                {
+                    "display_url" = "hartgram.com/a03";
+                    "expanded_url" = "http://hartgram.com/a03";
+                    indices =                     (
+                        9,
+                        31
+                    );
+                    url = "http://t.co/7jmCVNaW8G";
+                }
+            );
+            "user_mentions" =             (
+            );
+        };
+        "favorite_count" = 405;
+        favorited = 0;
+        geo = "<null>";
+        id = 569399200082829315;
+        "id_str" = 569399200082829315;
+        "in_reply_to_screen_name" = "<null>";
+        "in_reply_to_status_id" = "<null>";
+        "in_reply_to_status_id_str" = "<null>";
+        "in_reply_to_user_id" = "<null>";
+        "in_reply_to_user_id_str" = "<null>";
+        lang = und;
+        place = "<null>";
+        "possibly_sensitive" = 0;
+        "possibly_sensitive_appealable" = 0;
+        "retweet_count" = 56;
+        retweeted = 0;
+        source = "<a href=\"http://www.postargram.com\" rel=\"nofollow\">Postargram Photo Notification</a>";
+        text = "#DopePic http://t.co/7jmCVNaW8G";
+        truncated = 0;
+        user =         {
+            "contributors_enabled" = 0;
+            "created_at" = "Sat Mar 07 02:02:31 +0000 2009";
+            "default_profile" = 0;
+            "default_profile_image" = 0;
+            description = "My name is Kevin Hart and I WORK HARD!!! That pretty much sums me up!!! Everybody Wants To Be Famous But Nobody Wants To Do The Work";
+            entities =             {
+                description =                 {
+                    urls =                     (
+                    );
+                };
+                url =                 {
+                    urls =                     (
+                                                {
+                            "display_url" = "kevinhartnation.com";
+                            "expanded_url" = "http://www.kevinhartnation.com";
+                            indices =                             (
+                                0,
+                                22
+                            );
+                            url = "http://t.co/8eSZFIFqq2";
+                        }
+                    );
+                };
+            };
+            "favourites_count" = 18;
+            "follow_request_sent" = 0;
+            "followers_count" = 16938828;
+            following = 1;
+            "friends_count" = 496;
+            "geo_enabled" = 0;
+            id = 23151437;
+            "id_str" = 23151437;
+            "is_translation_enabled" = 1;
+            "is_translator" = 0;
+            lang = en;
+            "listed_count" = 21355;
+            location = "Philly/LA";
+            name = "Kevin Hart";
+            notifications = 0;
+            "profile_background_color" = 131516;
+            "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_tile" = 1;
+            "profile_banner_url" = "https://pbs.twimg.com/profile_banners/23151437/1424266489";
+            "profile_image_url" = "http://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_image_url_https" = "https://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_link_color" = 009999;
+            "profile_location" = "<null>";
+            "profile_sidebar_border_color" = EEEEEE;
+            "profile_sidebar_fill_color" = EFEFEF;
+            "profile_text_color" = 333333;
+            "profile_use_background_image" = 1;
+            protected = 0;
+            "screen_name" = KevinHart4real;
+            "statuses_count" = 24071;
+            "time_zone" = "Pacific Time (US & Canada)";
+            url = "http://t.co/8eSZFIFqq2";
+            "utc_offset" = "-28800";
+            verified = 1;
+        };
+    },
+        {
+        contributors = "<null>";
+        coordinates = "<null>";
+        "created_at" = "Sun Feb 22 04:11:38 +0000 2015";
+        entities =         {
+            hashtags =             (
+                                {
+                    indices =                     (
+                        0,
+                        16
+                    );
+                    text = ComingToAmerica;
+                }
+            );
+            symbols =             (
+            );
+            urls =             (
+                                {
+                    "display_url" = "hartgram.com/a00";
+                    "expanded_url" = "http://hartgram.com/a00";
+                    indices =                     (
+                        17,
+                        39
+                    );
+                    url = "http://t.co/PnmtJns4qM";
+                }
+            );
+            "user_mentions" =             (
+            );
+        };
+        "favorite_count" = 613;
+        favorited = 0;
+        geo = "<null>";
+        id = 569348767217885184;
+        "id_str" = 569348767217885184;
+        "in_reply_to_screen_name" = "<null>";
+        "in_reply_to_status_id" = "<null>";
+        "in_reply_to_status_id_str" = "<null>";
+        "in_reply_to_user_id" = "<null>";
+        "in_reply_to_user_id_str" = "<null>";
+        lang = und;
+        place = "<null>";
+        "possibly_sensitive" = 0;
+        "possibly_sensitive_appealable" = 0;
+        "retweet_count" = 147;
+        retweeted = 0;
+        source = "<a href=\"http://www.postargram.com\" rel=\"nofollow\">Postargram Photo Notification</a>";
+        text = "#ComingToAmerica http://t.co/PnmtJns4qM";
+        truncated = 0;
+        user =         {
+            "contributors_enabled" = 0;
+            "created_at" = "Sat Mar 07 02:02:31 +0000 2009";
+            "default_profile" = 0;
+            "default_profile_image" = 0;
+            description = "My name is Kevin Hart and I WORK HARD!!! That pretty much sums me up!!! Everybody Wants To Be Famous But Nobody Wants To Do The Work";
+            entities =             {
+                description =                 {
+                    urls =                     (
+                    );
+                };
+                url =                 {
+                    urls =                     (
+                                                {
+                            "display_url" = "kevinhartnation.com";
+                            "expanded_url" = "http://www.kevinhartnation.com";
+                            indices =                             (
+                                0,
+                                22
+                            );
+                            url = "http://t.co/8eSZFIFqq2";
+                        }
+                    );
+                };
+            };
+            "favourites_count" = 18;
+            "follow_request_sent" = 0;
+            "followers_count" = 16938828;
+            following = 1;
+            "friends_count" = 496;
+            "geo_enabled" = 0;
+            id = 23151437;
+            "id_str" = 23151437;
+            "is_translation_enabled" = 1;
+            "is_translator" = 0;
+            lang = en;
+            "listed_count" = 21355;
+            location = "Philly/LA";
+            name = "Kevin Hart";
+            notifications = 0;
+            "profile_background_color" = 131516;
+            "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_tile" = 1;
+            "profile_banner_url" = "https://pbs.twimg.com/profile_banners/23151437/1424266489";
+            "profile_image_url" = "http://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_image_url_https" = "https://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_link_color" = 009999;
+            "profile_location" = "<null>";
+            "profile_sidebar_border_color" = EEEEEE;
+            "profile_sidebar_fill_color" = EFEFEF;
+            "profile_text_color" = 333333;
+            "profile_use_background_image" = 1;
+            protected = 0;
+            "screen_name" = KevinHart4real;
+            "statuses_count" = 24071;
+            "time_zone" = "Pacific Time (US & Canada)";
+            url = "http://t.co/8eSZFIFqq2";
+            "utc_offset" = "-28800";
+            verified = 1;
+        };
+    },
+        {
+        contributors = "<null>";
+        coordinates = "<null>";
+        "created_at" = "Sun Feb 22 03:58:18 +0000 2015";
+        entities =         {
+            hashtags =             (
+            );
+            symbols =             (
+            );
+            urls =             (
+            );
+            "user_mentions" =             (
+            );
+        };
+        "favorite_count" = 1011;
+        favorited = 0;
+        geo = "<null>";
+        id = 569345409459449856;
+        "id_str" = 569345409459449856;
+        "in_reply_to_screen_name" = "<null>";
+        "in_reply_to_status_id" = "<null>";
+        "in_reply_to_status_id_str" = "<null>";
+        "in_reply_to_user_id" = "<null>";
+        "in_reply_to_user_id_str" = "<null>";
+        lang = en;
+        place = "<null>";
+        "retweet_count" = 292;
+        retweeted = 0;
+        source = "<a href=\"http://tweetlogix.com\" rel=\"nofollow\">Tweetlogix</a>";
+        text = "Let's gooooooo people....turn to Comedy Central right now &amp; tune into Kevin Hart presents \"Keith Roninson back of the bus funny\"";
+        truncated = 0;
+        user =         {
+            "contributors_enabled" = 0;
+            "created_at" = "Sat Mar 07 02:02:31 +0000 2009";
+            "default_profile" = 0;
+            "default_profile_image" = 0;
+            description = "My name is Kevin Hart and I WORK HARD!!! That pretty much sums me up!!! Everybody Wants To Be Famous But Nobody Wants To Do The Work";
+            entities =             {
+                description =                 {
+                    urls =                     (
+                    );
+                };
+                url =                 {
+                    urls =                     (
+                                                {
+                            "display_url" = "kevinhartnation.com";
+                            "expanded_url" = "http://www.kevinhartnation.com";
+                            indices =                             (
+                                0,
+                                22
+                            );
+                            url = "http://t.co/8eSZFIFqq2";
+                        }
+                    );
+                };
+            };
+            "favourites_count" = 18;
+            "follow_request_sent" = 0;
+            "followers_count" = 16938828;
+            following = 1;
+            "friends_count" = 496;
+            "geo_enabled" = 0;
+            id = 23151437;
+            "id_str" = 23151437;
+            "is_translation_enabled" = 1;
+            "is_translator" = 0;
+            lang = en;
+            "listed_count" = 21355;
+            location = "Philly/LA";
+            name = "Kevin Hart";
+            notifications = 0;
+            "profile_background_color" = 131516;
+            "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_tile" = 1;
+            "profile_banner_url" = "https://pbs.twimg.com/profile_banners/23151437/1424266489";
+            "profile_image_url" = "http://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_image_url_https" = "https://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_link_color" = 009999;
+            "profile_location" = "<null>";
+            "profile_sidebar_border_color" = EEEEEE;
+            "profile_sidebar_fill_color" = EFEFEF;
+            "profile_text_color" = 333333;
+            "profile_use_background_image" = 1;
+            protected = 0;
+            "screen_name" = KevinHart4real;
+            "statuses_count" = 24071;
+            "time_zone" = "Pacific Time (US & Canada)";
+            url = "http://t.co/8eSZFIFqq2";
+            "utc_offset" = "-28800";
+            verified = 1;
+        };
+    },
+        {
+        contributors = "<null>";
+        coordinates = "<null>";
+        "created_at" = "Sun Feb 22 02:04:03 +0000 2015";
+        entities =         {
+            hashtags =             (
+            );
+            media =             (
+                                {
+                    "display_url" = "pic.twitter.com/ktcQZCOXew";
+                    "expanded_url" = "http://twitter.com/ccstandup/status/569315717880815616/photo/1";
+                    id = 569257851793977344;
+                    "id_str" = 569257851793977344;
+                    indices =                     (
+                        139,
+                        140
+                    );
+                    "media_url" = "http://pbs.twimg.com/media/B-ZpAAnIMAAHP74.jpg";
+                    "media_url_https" = "https://pbs.twimg.com/media/B-ZpAAnIMAAHP74.jpg";
+                    sizes =                     {
+                        large =                         {
+                            h = 576;
+                            resize = fit;
+                            w = 1024;
+                        };
+                        medium =                         {
+                            h = 337;
+                            resize = fit;
+                            w = 600;
+                        };
+                        small =                         {
+                            h = 191;
+                            resize = fit;
+                            w = 340;
+                        };
+                        thumb =                         {
+                            h = 150;
+                            resize = crop;
+                            w = 150;
+                        };
+                    };
+                    "source_status_id" = 569315717880815616;
+                    "source_status_id_str" = 569315717880815616;
+                    "source_user_id" = 17290126;
+                    "source_user_id_str" = 17290126;
+                    type = photo;
+                    url = "http://t.co/ktcQZCOXew";
+                }
+            );
+            symbols =             (
+            );
+            urls =             (
+            );
+            "user_mentions" =             (
+                                {
+                    id = 17290126;
+                    "id_str" = 17290126;
+                    indices =                     (
+                        3,
+                        13
+                    );
+                    name = "CC:Stand-Up";
+                    "screen_name" = ccstandup;
+                },
+                                {
+                    id = 23151437;
+                    "id_str" = 23151437;
+                    indices =                     (
+                        50,
+                        65
+                    );
+                    name = "Kevin Hart";
+                    "screen_name" = KevinHart4real;
+                },
+                                {
+                    id = 23827692;
+                    "id_str" = 23827692;
+                    indices =                     (
+                        112,
+                        126
+                    );
+                    name = "Comedy Central";
+                    "screen_name" = ComedyCentral;
+                }
+            );
+        };
+        "extended_entities" =         {
+            media =             (
+                                {
+                    "display_url" = "pic.twitter.com/ktcQZCOXew";
+                    "expanded_url" = "http://twitter.com/ccstandup/status/569315717880815616/photo/1";
+                    id = 569257851793977344;
+                    "id_str" = 569257851793977344;
+                    indices =                     (
+                        139,
+                        140
+                    );
+                    "media_url" = "http://pbs.twimg.com/media/B-ZpAAnIMAAHP74.jpg";
+                    "media_url_https" = "https://pbs.twimg.com/media/B-ZpAAnIMAAHP74.jpg";
+                    sizes =                     {
+                        large =                         {
+                            h = 576;
+                            resize = fit;
+                            w = 1024;
+                        };
+                        medium =                         {
+                            h = 337;
+                            resize = fit;
+                            w = 600;
+                        };
+                        small =                         {
+                            h = 191;
+                            resize = fit;
+                            w = 340;
+                        };
+                        thumb =                         {
+                            h = 150;
+                            resize = crop;
+                            w = 150;
+                        };
+                    };
+                    "source_status_id" = 569315717880815616;
+                    "source_status_id_str" = 569315717880815616;
+                    "source_user_id" = 17290126;
+                    "source_user_id_str" = 17290126;
+                    type = photo;
+                    url = "http://t.co/ktcQZCOXew";
+                }
+            );
+        };
+        "favorite_count" = 0;
+        favorited = 0;
+        geo = "<null>";
+        id = 569316660449976320;
+        "id_str" = 569316660449976320;
+        "in_reply_to_screen_name" = "<null>";
+        "in_reply_to_status_id" = "<null>";
+        "in_reply_to_status_id_str" = "<null>";
+        "in_reply_to_user_id" = "<null>";
+        "in_reply_to_user_id_str" = "<null>";
+        lang = en;
+        place = "<null>";
+        "possibly_sensitive" = 0;
+        "possibly_sensitive_appealable" = 0;
+        "retweet_count" = 230;
+        retweeted = 0;
+        "retweeted_status" =         {
+            contributors = "<null>";
+            coordinates = "<null>";
+            "created_at" = "Sun Feb 22 02:00:19 +0000 2015";
+            entities =             {
+                hashtags =                 (
+                );
+                media =                 (
+                                        {
+                        "display_url" = "pic.twitter.com/ktcQZCOXew";
+                        "expanded_url" = "http://twitter.com/ccstandup/status/569315717880815616/photo/1";
+                        id = 569257851793977344;
+                        "id_str" = 569257851793977344;
+                        indices =                         (
+                            113,
+                            135
+                        );
+                        "media_url" = "http://pbs.twimg.com/media/B-ZpAAnIMAAHP74.jpg";
+                        "media_url_https" = "https://pbs.twimg.com/media/B-ZpAAnIMAAHP74.jpg";
+                        sizes =                         {
+                            large =                             {
+                                h = 576;
+                                resize = fit;
+                                w = 1024;
+                            };
+                            medium =                             {
+                                h = 337;
+                                resize = fit;
+                                w = 600;
+                            };
+                            small =                             {
+                                h = 191;
+                                resize = fit;
+                                w = 340;
+                            };
+                            thumb =                             {
+                                h = 150;
+                                resize = crop;
+                                w = 150;
+                            };
+                        };
+                        type = photo;
+                        url = "http://t.co/ktcQZCOXew";
+                    }
+                );
+                symbols =                 (
+                );
+                urls =                 (
+                );
+                "user_mentions" =                 (
+                                        {
+                        id = 23151437;
+                        "id_str" = 23151437;
+                        indices =                         (
+                            35,
+                            50
+                        );
+                        name = "Kevin Hart";
+                        "screen_name" = KevinHart4real;
+                    },
+                                        {
+                        id = 23827692;
+                        "id_str" = 23827692;
+                        indices =                         (
+                            97,
+                            111
+                        );
+                        name = "Comedy Central";
+                        "screen_name" = ComedyCentral;
+                    }
+                );
+            };
+            "extended_entities" =             {
+                media =                 (
+                                        {
+                        "display_url" = "pic.twitter.com/ktcQZCOXew";
+                        "expanded_url" = "http://twitter.com/ccstandup/status/569315717880815616/photo/1";
+                        id = 569257851793977344;
+                        "id_str" = 569257851793977344;
+                        indices =                         (
+                            113,
+                            135
+                        );
+                        "media_url" = "http://pbs.twimg.com/media/B-ZpAAnIMAAHP74.jpg";
+                        "media_url_https" = "https://pbs.twimg.com/media/B-ZpAAnIMAAHP74.jpg";
+                        sizes =                         {
+                            large =                             {
+                                h = 576;
+                                resize = fit;
+                                w = 1024;
+                            };
+                            medium =                             {
+                                h = 337;
+                                resize = fit;
+                                w = 600;
+                            };
+                            small =                             {
+                                h = 191;
+                                resize = fit;
+                                w = 340;
+                            };
+                            thumb =                             {
+                                h = 150;
+                                resize = crop;
+                                w = 150;
+                            };
+                        };
+                        type = photo;
+                        url = "http://t.co/ktcQZCOXew";
+                    }
+                );
+            };
+            "favorite_count" = 820;
+            favorited = 0;
+            geo = "<null>";
+            id = 569315717880815616;
+            "id_str" = 569315717880815616;
+            "in_reply_to_screen_name" = "<null>";
+            "in_reply_to_status_id" = "<null>";
+            "in_reply_to_status_id_str" = "<null>";
+            "in_reply_to_user_id" = "<null>";
+            "in_reply_to_user_id_str" = "<null>";
+            lang = en;
+            place = "<null>";
+            "possibly_sensitive" = 0;
+            "possibly_sensitive_appealable" = 0;
+            "retweet_count" = 230;
+            retweeted = 0;
+            source = "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>";
+            text = "The face you make when you realize @KevinHart4real's \"I'm a Grown Little Man\" is starting NOW on @ComedyCentral. http://t.co/ktcQZCOXew";
+            truncated = 0;
+            user =             {
+                "contributors_enabled" = 0;
+                "created_at" = "Mon Nov 10 17:02:14 +0000 2008";
+                "default_profile" = 0;
+                "default_profile_image" = 0;
+                description = "@ComedyCentral's home for all things stand-up.";
+                entities =                 {
+                    description =                     {
+                        urls =                         (
+                        );
+                    };
+                    url =                     {
+                        urls =                         (
+                                                        {
+                                "display_url" = "cc.com/standup";
+                                "expanded_url" = "http://www.cc.com/standup";
+                                indices =                                 (
+                                    0,
+                                    22
+                                );
+                                url = "http://t.co/IJmSbFo4hq";
+                            }
+                        );
+                    };
+                };
+                "favourites_count" = 2363;
+                "follow_request_sent" = 0;
+                "followers_count" = 49503;
+                following = 0;
+                "friends_count" = 470;
+                "geo_enabled" = 1;
+                id = 17290126;
+                "id_str" = 17290126;
+                "is_translation_enabled" = 0;
+                "is_translator" = 0;
+                lang = en;
+                "listed_count" = 920;
+                location = "";
+                name = "CC:Stand-Up";
+                notifications = 0;
+                "profile_background_color" = 262A2B;
+                "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/367830898/CCstandup_twitter_bg_REV_4b6564.jpg";
+                "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/367830898/CCstandup_twitter_bg_REV_4b6564.jpg";
+                "profile_background_tile" = 0;
+                "profile_banner_url" = "https://pbs.twimg.com/profile_banners/17290126/1423150148";
+                "profile_image_url" = "http://pbs.twimg.com/profile_images/539907407778836480/qLMwLCjd_normal.jpeg";
+                "profile_image_url_https" = "https://pbs.twimg.com/profile_images/539907407778836480/qLMwLCjd_normal.jpeg";
+                "profile_link_color" = 0094AF;
+                "profile_location" = "<null>";
+                "profile_sidebar_border_color" = FFFFFF;
+                "profile_sidebar_fill_color" = FFFCE1;
+                "profile_text_color" = 333333;
+                "profile_use_background_image" = 0;
+                protected = 0;
+                "screen_name" = ccstandup;
+                "statuses_count" = 10949;
+                "time_zone" = "Eastern Time (US & Canada)";
+                url = "http://t.co/IJmSbFo4hq";
+                "utc_offset" = "-18000";
+                verified = 1;
+            };
+        };
+        source = "<a href=\"http://tweetlogix.com\" rel=\"nofollow\">Tweetlogix</a>";
+        text = "RT @ccstandup: The face you make when you realize @KevinHart4real's \"I'm a Grown Little Man\" is starting NOW on @ComedyCentral. http://t.co\U2026";
+        truncated = 0;
+        user =         {
+            "contributors_enabled" = 0;
+            "created_at" = "Sat Mar 07 02:02:31 +0000 2009";
+            "default_profile" = 0;
+            "default_profile_image" = 0;
+            description = "My name is Kevin Hart and I WORK HARD!!! That pretty much sums me up!!! Everybody Wants To Be Famous But Nobody Wants To Do The Work";
+            entities =             {
+                description =                 {
+                    urls =                     (
+                    );
+                };
+                url =                 {
+                    urls =                     (
+                                                {
+                            "display_url" = "kevinhartnation.com";
+                            "expanded_url" = "http://www.kevinhartnation.com";
+                            indices =                             (
+                                0,
+                                22
+                            );
+                            url = "http://t.co/8eSZFIFqq2";
+                        }
+                    );
+                };
+            };
+            "favourites_count" = 18;
+            "follow_request_sent" = 0;
+            "followers_count" = 16938828;
+            following = 1;
+            "friends_count" = 496;
+            "geo_enabled" = 0;
+            id = 23151437;
+            "id_str" = 23151437;
+            "is_translation_enabled" = 1;
+            "is_translator" = 0;
+            lang = en;
+            "listed_count" = 21355;
+            location = "Philly/LA";
+            name = "Kevin Hart";
+            notifications = 0;
+            "profile_background_color" = 131516;
+            "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_tile" = 1;
+            "profile_banner_url" = "https://pbs.twimg.com/profile_banners/23151437/1424266489";
+            "profile_image_url" = "http://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_image_url_https" = "https://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_link_color" = 009999;
+            "profile_location" = "<null>";
+            "profile_sidebar_border_color" = EEEEEE;
+            "profile_sidebar_fill_color" = EFEFEF;
+            "profile_text_color" = 333333;
+            "profile_use_background_image" = 1;
+            protected = 0;
+            "screen_name" = KevinHart4real;
+            "statuses_count" = 24071;
+            "time_zone" = "Pacific Time (US & Canada)";
+            url = "http://t.co/8eSZFIFqq2";
+            "utc_offset" = "-28800";
+            verified = 1;
+        };
+    },
+        {
+        contributors = "<null>";
+        coordinates = "<null>";
+        "created_at" = "Sun Feb 22 01:53:46 +0000 2015";
+        entities =         {
+            hashtags =             (
+            );
+            symbols =             (
+            );
+            urls =             (
+            );
+            "user_mentions" =             (
+            );
+        };
+        "favorite_count" = 637;
+        favorited = 0;
+        geo = "<null>";
+        id = 569314069708021762;
+        "id_str" = 569314069708021762;
+        "in_reply_to_screen_name" = "<null>";
+        "in_reply_to_status_id" = "<null>";
+        "in_reply_to_status_id_str" = "<null>";
+        "in_reply_to_user_id" = "<null>";
+        "in_reply_to_user_id_str" = "<null>";
+        lang = en;
+        place = "<null>";
+        "retweet_count" = 181;
+        retweeted = 0;
+        source = "<a href=\"http://tweetlogix.com\" rel=\"nofollow\">Tweetlogix</a>";
+        text = "Make sure y'all tune into Comedy Central tonight at 11pm/10pmc &amp; catch Kevin Hart presents \"Keith Robinson\" Back of the bus funny....";
+        truncated = 0;
+        user =         {
+            "contributors_enabled" = 0;
+            "created_at" = "Sat Mar 07 02:02:31 +0000 2009";
+            "default_profile" = 0;
+            "default_profile_image" = 0;
+            description = "My name is Kevin Hart and I WORK HARD!!! That pretty much sums me up!!! Everybody Wants To Be Famous But Nobody Wants To Do The Work";
+            entities =             {
+                description =                 {
+                    urls =                     (
+                    );
+                };
+                url =                 {
+                    urls =                     (
+                                                {
+                            "display_url" = "kevinhartnation.com";
+                            "expanded_url" = "http://www.kevinhartnation.com";
+                            indices =                             (
+                                0,
+                                22
+                            );
+                            url = "http://t.co/8eSZFIFqq2";
+                        }
+                    );
+                };
+            };
+            "favourites_count" = 18;
+            "follow_request_sent" = 0;
+            "followers_count" = 16938828;
+            following = 1;
+            "friends_count" = 496;
+            "geo_enabled" = 0;
+            id = 23151437;
+            "id_str" = 23151437;
+            "is_translation_enabled" = 1;
+            "is_translator" = 0;
+            lang = en;
+            "listed_count" = 21355;
+            location = "Philly/LA";
+            name = "Kevin Hart";
+            notifications = 0;
+            "profile_background_color" = 131516;
+            "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_tile" = 1;
+            "profile_banner_url" = "https://pbs.twimg.com/profile_banners/23151437/1424266489";
+            "profile_image_url" = "http://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_image_url_https" = "https://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_link_color" = 009999;
+            "profile_location" = "<null>";
+            "profile_sidebar_border_color" = EEEEEE;
+            "profile_sidebar_fill_color" = EFEFEF;
+            "profile_text_color" = 333333;
+            "profile_use_background_image" = 1;
+            protected = 0;
+            "screen_name" = KevinHart4real;
+            "statuses_count" = 24071;
+            "time_zone" = "Pacific Time (US & Canada)";
+            url = "http://t.co/8eSZFIFqq2";
+            "utc_offset" = "-28800";
+            verified = 1;
+        };
+    },
+        {
+        contributors = "<null>";
+        coordinates = "<null>";
+        "created_at" = "Sun Feb 22 01:18:55 +0000 2015";
+        entities =         {
+            hashtags =             (
+                                {
+                    indices =                     (
+                        96,
+                        104
+                    );
+                    text = WhatNow;
+                }
+            );
+            symbols =             (
+            );
+            urls =             (
+                                {
+                    "display_url" = "hartgram.com/9ZZ";
+                    "expanded_url" = "http://hartgram.com/9ZZ";
+                    indices =                     (
+                        109,
+                        131
+                    );
+                    url = "http://t.co/y6b94PL3YK";
+                }
+            );
+            "user_mentions" =             (
+            );
+        };
+        "favorite_count" = 578;
+        favorited = 0;
+        geo = "<null>";
+        id = 569305302543151104;
+        "id_str" = 569305302543151104;
+        "in_reply_to_screen_name" = "<null>";
+        "in_reply_to_status_id" = "<null>";
+        "in_reply_to_status_id_str" = "<null>";
+        "in_reply_to_user_id" = "<null>";
+        "in_reply_to_user_id_str" = "<null>";
+        lang = en;
+        place = "<null>";
+        "possibly_sensitive" = 0;
+        "possibly_sensitive_appealable" = 0;
+        "retweet_count" = 129;
+        retweeted = 0;
+        source = "<a href=\"http://www.postargram.com\" rel=\"nofollow\">Postargram Photo Notification</a>";
+        text = "It's LEVELS to this shit.....I'm not playing any games people!!!! This tour is about to be EPIC #WhatNow ... http://t.co/y6b94PL3YK";
+        truncated = 0;
+        user =         {
+            "contributors_enabled" = 0;
+            "created_at" = "Sat Mar 07 02:02:31 +0000 2009";
+            "default_profile" = 0;
+            "default_profile_image" = 0;
+            description = "My name is Kevin Hart and I WORK HARD!!! That pretty much sums me up!!! Everybody Wants To Be Famous But Nobody Wants To Do The Work";
+            entities =             {
+                description =                 {
+                    urls =                     (
+                    );
+                };
+                url =                 {
+                    urls =                     (
+                                                {
+                            "display_url" = "kevinhartnation.com";
+                            "expanded_url" = "http://www.kevinhartnation.com";
+                            indices =                             (
+                                0,
+                                22
+                            );
+                            url = "http://t.co/8eSZFIFqq2";
+                        }
+                    );
+                };
+            };
+            "favourites_count" = 18;
+            "follow_request_sent" = 0;
+            "followers_count" = 16938828;
+            following = 1;
+            "friends_count" = 496;
+            "geo_enabled" = 0;
+            id = 23151437;
+            "id_str" = 23151437;
+            "is_translation_enabled" = 1;
+            "is_translator" = 0;
+            lang = en;
+            "listed_count" = 21355;
+            location = "Philly/LA";
+            name = "Kevin Hart";
+            notifications = 0;
+            "profile_background_color" = 131516;
+            "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme14/bg.gif";
+            "profile_background_tile" = 1;
+            "profile_banner_url" = "https://pbs.twimg.com/profile_banners/23151437/1424266489";
+            "profile_image_url" = "http://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_image_url_https" = "https://pbs.twimg.com/profile_images/568041122765606912/APfVoUzX_normal.jpeg";
+            "profile_link_color" = 009999;
+            "profile_location" = "<null>";
+            "profile_sidebar_border_color" = EEEEEE;
+            "profile_sidebar_fill_color" = EFEFEF;
+            "profile_text_color" = 333333;
+            "profile_use_background_image" = 1;
+            protected = 0;
+            "screen_name" = KevinHart4real;
+            "statuses_count" = 24071;
+            "time_zone" = "Pacific Time (US & Canada)";
+            url = "http://t.co/8eSZFIFqq2";
+            "utc_offset" = "-28800";
+            verified = 1;
+        };
+    }
+)
