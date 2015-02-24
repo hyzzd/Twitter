@@ -46,7 +46,10 @@ NSString * const TWITTER_BASE_URL = @"https://api.twitter.com";
         [[UIApplication sharedApplication] openURL:authURL];
     } failure:^(NSError *error) {
         NSLog(@"Failed to get the request token!");
-        self.loginCompletion(nil, error);
+
+        if (self.loginCompletion != nil) {
+            self.loginCompletion(nil, error);
+        }
     }];
 }
 
@@ -60,10 +63,16 @@ NSString * const TWITTER_BASE_URL = @"https://api.twitter.com";
             User *user = [[User alloc] initWithDictionary:responseObject];
             [User setCurrentUser:user];
             NSLog(@"Current user: %@", user.name);
-            self.loginCompletion(user, nil);
+
+            if (self.loginCompletion != nil) {
+                self.loginCompletion(user, nil);
+            }
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
             NSLog(@"Failed getting current user!");
-            self.loginCompletion(nil, error);
+
+            if (self.loginCompletion != nil) {
+                self.loginCompletion(nil, error);
+            }
         }];
     } failure:^(NSError *error) {
         NSLog(@"Failed to get the access token!");
@@ -74,10 +83,80 @@ NSString * const TWITTER_BASE_URL = @"https://api.twitter.com";
     [self GET:@"1.1/statuses/home_timeline.json" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
 //        NSLog(@"Tweets: %@", responseObject);
         NSArray *tweets = [Tweet tweetsWithArray:responseObject];
-        completion(tweets, nil);
+
+        if (completion != nil) {
+            completion(tweets, nil);
+        }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Failed getting tweets!");
-        completion(nil, error);
+
+        if (completion != nil) {
+            completion(nil, error);
+        }
+    }];
+}
+
+- (void)tweetWithParams:(NSDictionary *)params completion:(void (^)(id, NSError *))completion {
+    [self POST:@"1.1/statuses/update.json" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        if (completion != nil) {
+            completion(responseObject, nil);
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        if (completion != nil) {
+            completion(nil, error);
+        }
+    }];
+}
+
+- (void)retweetWithParams:(NSDictionary *)params completion:(void (^)(id, NSError *))completion {
+    NSString *tweetID = params[@"id"];
+
+    [self POST:[NSString stringWithFormat:@"1.1/statuses/retweet/%@.json", tweetID] parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        if (completion != nil) {
+            completion(responseObject, nil);
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        if (completion != nil) {
+            completion(nil, error);
+        }
+    }];
+}
+
+- (void)undoRetweetWithParams:(NSDictionary *)params completion:(void (^)(id, NSError *))completion {
+    NSString *tweetID = params[@"id"];
+
+    [self POST:[NSString stringWithFormat:@"1.1/statuses/destroy/%@.json", tweetID] parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        if (completion != nil) {
+            completion(responseObject, nil);
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        if (completion != nil) {
+            completion(nil, error);
+        }
+    }];
+}
+
+- (void)favoriteWithParams:(NSDictionary *)params completion:(void (^)(id, NSError *))completion {
+    [self POST:@"1.1/favorites/create.json" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        if (completion != nil) {
+            completion(responseObject, nil);
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        if (completion != nil) {
+            completion(nil, error);
+        }
+    }];
+}
+
+- (void)undoFavoriteWithParams:(NSDictionary *)params completion:(void (^)(id, NSError *))completion {
+    [self POST:@"1.1/favorites/destroy.json" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        if (completion != nil) {
+            completion(responseObject, nil);
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        if (completion != nil) {
+            completion(nil, error);
+        }
     }];
 }
 
