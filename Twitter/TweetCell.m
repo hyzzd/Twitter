@@ -17,22 +17,50 @@
 @property (weak, nonatomic) IBOutlet UILabel *tweetLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 
+@property (weak, nonatomic) IBOutlet UIImageView *replyButton;
+@property (weak, nonatomic) IBOutlet UIImageView *retweetButton;
+@property (weak, nonatomic) IBOutlet UIImageView *favoriteButton;
+
 @end
 
 @implementation TweetCell
+
+- (void)awakeFromNib {
+    self.tweetLabel.preferredMaxLayoutWidth = self.tweetLabel.frame.size.width;
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    self.tweetLabel.preferredMaxLayoutWidth = self.tweetLabel.frame.size.width;
+}
 
 - (id)initWithTweet:(Tweet *)tweet {
     self = [super init];
 
     if (self) {
-        [self.thumbnailView setImageWithURL:[NSURL URLWithString:tweet.user.profileImageURL]];
-        self.nameLabel.text = tweet.user.name;
-        self.usernameLabel.text = tweet.user.username;
-        self.tweetLabel.text = tweet.text;
-//        self.timeLabel.text = tweet.createdAt;
+        NSLog(@"Init called with %@", tweet);
+        [self populateWithTweet:tweet];
     }
 
     return self;
+}
+
+- (void)populateWithTweet:(Tweet *)tweet {
+    NSLog(@"Populating with: %@", tweet.user.name);
+    [self.thumbnailView setImageWithURL:[NSURL URLWithString:tweet.user.profileImageURL]];
+    self.thumbnailView.layer.cornerRadius = 3;
+    self.thumbnailView.clipsToBounds = YES;
+
+    self.nameLabel.text = tweet.user.name;
+    self.usernameLabel.text = [NSString stringWithFormat:@"@%@", tweet.user.username];
+    self.tweetLabel.text = tweet.text;
+    //        self.timeLabel.text = tweet.createdAt;
+
+    [self.replyButton setImageWithURL:[NSURL URLWithString:@"https://g.twimg.com/dev/documentation/image/reply.png"]];
+
+    [self.retweetButton setImageWithURL:[NSURL URLWithString:@"https://g.twimg.com/dev/documentation/image/retweet.png"]];
+
+    [self.favoriteButton setImageWithURL:[NSURL URLWithString:@"https://g.twimg.com/dev/documentation/image/favorite.png"]];
 }
 
 @end

@@ -37,7 +37,7 @@
         [self.tableView reloadData];
 
         for (Tweet *tweet in tweets) {
-            NSLog(@"Text: %@", tweet.text);
+//            NSLog(@"Text: %@", tweet.text);
         }
 
         NSLog(@"Got %ld tweets", tweets == nil ? 0 : tweets.count);
@@ -50,7 +50,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TweetCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TweetCell" forIndexPath:indexPath];
-    cell = [cell initWithTweet:self.tweets[indexPath.row]];
+    [cell populateWithTweet:self.tweets[indexPath.row]];
     return cell;
 }
 

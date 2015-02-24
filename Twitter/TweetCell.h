@@ -12,5 +12,6 @@
 @interface TweetCell : UITableViewCell
 
 - (id)initWithTweet:(Tweet *)tweet;
+- (void)populateWithTweet:(Tweet *)tweet;
 
 @end
