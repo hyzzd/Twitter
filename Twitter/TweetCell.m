@@ -46,7 +46,6 @@
 }
 
 - (void)populateWithTweet:(Tweet *)tweet {
-    NSLog(@"Populating with: %@", tweet.user.name);
     [self.thumbnailView setImageWithURL:[NSURL URLWithString:tweet.user.profileImageURL]];
     self.thumbnailView.layer.cornerRadius = 3;
     self.thumbnailView.clipsToBounds = YES;
