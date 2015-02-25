@@ -20,6 +20,8 @@
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
         formatter.dateFormat = @"EEE MMM d HH:mm:ss Z y";
         self.createdAt = [formatter dateFromString:dictionary[@"created_at"]];
+        self.retweeted = [dictionary[@"retweeted"] boolValue];
+        self.favorited = [dictionary[@"favorited"] boolValue];
     }
 
     return self;

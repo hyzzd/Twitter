@@ -103,7 +103,10 @@
             </tableViewCellContentView>
             <gestureRecognizers/>
             <connections>
+                <outlet property="favoriteButton" destination="QhU-Xz-fcM" id="NAu-Kj-9Hu"/>
                 <outlet property="nameLabel" destination="AtH-W6-4pB" id="4ub-qe-67c"/>
+                <outlet property="replyButton" destination="3m2-gF-iYX" id="dUL-za-8nQ"/>
+                <outlet property="retweetButton" destination="tUJ-Nd-2Ud" id="YfK-VU-P1v"/>
                 <outlet property="thumbnailView" destination="Kuy-9o-eIB" id="cVJ-Bf-7zY"/>
                 <outlet property="timeLabel" destination="2uG-cV-tBD" id="p9D-bC-TDw"/>
                 <outlet property="tweetLabel" destination="Ph5-Dx-U1g" id="RDE-dR-1WQ"/>

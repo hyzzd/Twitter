@@ -9,6 +9,7 @@
 #import "TweetCell.h"
 #import "UIImageView+AFNetworking.h"
 #import "TwitterClient.h"
+#import "NSDate+DateTools.h"
 
 @interface TweetCell ()
 
@@ -17,10 +18,12 @@
 @property (weak, nonatomic) IBOutlet UILabel *usernameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *tweetLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UIButton *replyButton;
+@property (weak, nonatomic) IBOutlet UIButton *retweetButton;
+@property (weak, nonatomic) IBOutlet UIButton *favoriteButton;
 
-@property (weak, nonatomic) IBOutlet UIImageView *replyButton;
-@property (weak, nonatomic) IBOutlet UIImageView *retweetButton;
-@property (weak, nonatomic) IBOutlet UIImageView *favoriteButton;
+@property (assign, nonatomic) BOOL retweeted;
+@property (assign, nonatomic) BOOL favorited;
 
 @end
 
@@ -58,13 +61,11 @@
     self.nameLabel.text = tweet.user.name;
     self.usernameLabel.text = [NSString stringWithFormat:@"@%@", tweet.user.username];
     self.tweetLabel.text = tweet.text;
-    //        self.timeLabel.text = tweet.createdAt;
+    self.timeLabel.text = tweet.createdAt.shortTimeAgoSinceNow;
 
-    [self.replyButton setImageWithURL:[NSURL URLWithString:@"https://g.twimg.com/dev/documentation/image/reply.png"]];
-
-    [self.retweetButton setImageWithURL:[NSURL URLWithString:@"https://g.twimg.com/dev/documentation/image/retweet.png"]];
-
-    [self.favoriteButton setImageWithURL:[NSURL URLWithString:@"https://g.twimg.com/dev/documentation/image/favorite.png"]];
+    self.retweeted = tweet.retweeted;
+    self.favorited = tweet.favorited;
+    NSLog(@"Retweeted: %d, favorited: %d", self.retweeted, self.favorited);
 }
 
 - (IBAction)onReplyButton:(id)sender {
@@ -75,14 +76,31 @@
     NSLog(@"User tapped retweet button!");
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObject:self.tweet.tweetID forKey:@"id"];
 
-    [[TwitterClient sharedInstance] retweetWithParams:params completion:nil];
+    if (!self.retweeted) {
+        [[TwitterClient sharedInstance] retweetWithParams:params completion:nil];
+        [self.retweetButton setImage:[UIImage imageNamed:@"RetweetSelected"] forState:UIControlStateNormal];
+    } else {
+        [[TwitterClient sharedInstance] undoRetweetWithParams:params completion:nil];
+        [self.retweetButton setImage:[UIImage imageNamed:@"Retweet"] forState:UIControlStateNormal];
+    }
+
+    self.retweeted = !self.retweeted;
 }
 
 - (IBAction)onFavoriteButton:(id)sender {
     NSLog(@"User tapped favorite button!");
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObject:self.tweet.tweetID forKey:@"id"];
 
-    [[TwitterClient sharedInstance] favoriteWithParams:params completion:nil];
+    if (!self.favorited) {
+        [[TwitterClient sharedInstance] favoriteWithParams:params completion:nil];
+        [self.favoriteButton setImage:[UIImage imageNamed:@"StarSelected"] forState:UIControlStateNormal];
+    } else {
+        [[TwitterClient sharedInstance] undoFavoriteWithParams:params completion:nil];
+        [self.favoriteButton setImage:[UIImage imageNamed:@"Star"] forState:UIControlStateNormal];
+
+    }
+
+    self.favorited = !self.favorited;
 }
 
 @end
