@@ -48,7 +48,7 @@
     self.tweetLabel.text = tweet.text;
 
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    formatter.dateFormat = @"EEE MMM d y HH:mm";
+    formatter.dateFormat = @"EEE MMM d y, HH:mm";
     self.timeLabel.text = [formatter stringFromDate:tweet.createdAt];
 
     self.retweeted = tweet.retweeted;
