@@ -51,7 +51,11 @@
                         </state>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3m2-gF-iYX">
-                        <rect key="frame" x="64" y="50" width="16" height="22"/>
+                        <rect key="frame" x="64" y="53.5" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="fYS-vM-NnT"/>
+                            <constraint firstAttribute="width" constant="16" id="hH1-QG-qiC"/>
+                        </constraints>
                         <state key="normal" image="Reply">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
@@ -60,7 +64,11 @@
                         </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUJ-Nd-2Ud">
-                        <rect key="frame" x="120" y="50" width="16" height="22"/>
+                        <rect key="frame" x="120" y="53.5" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="3JF-0n-I4K"/>
+                            <constraint firstAttribute="height" constant="16" id="Ovd-Aa-8aR"/>
+                        </constraints>
                         <state key="normal" image="Retweet">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
@@ -69,7 +77,11 @@
                         </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhU-Xz-fcM">
-                        <rect key="frame" x="176" y="50" width="16" height="22"/>
+                        <rect key="frame" x="176" y="53.5" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="fuW-QV-iLr"/>
+                            <constraint firstAttribute="width" constant="16" id="m1P-Mw-7tt"/>
+                        </constraints>
                         <state key="normal" image="Star">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
@@ -98,7 +110,7 @@
                     <constraint firstItem="tUJ-Nd-2Ud" firstAttribute="centerY" secondItem="QhU-Xz-fcM" secondAttribute="centerY" id="vtz-KU-9lZ"/>
                     <constraint firstItem="QhU-Xz-fcM" firstAttribute="leading" secondItem="tUJ-Nd-2Ud" secondAttribute="trailing" constant="40" id="xLb-aC-T3W"/>
                     <constraint firstItem="tUJ-Nd-2Ud" firstAttribute="leading" secondItem="3m2-gF-iYX" secondAttribute="trailing" constant="40" id="y8e-hJ-aYN"/>
-                    <constraint firstItem="3m2-gF-iYX" firstAttribute="top" secondItem="Ph5-Dx-U1g" secondAttribute="bottom" constant="0.5" id="ywX-yq-moL"/>
+                    <constraint firstItem="3m2-gF-iYX" firstAttribute="top" secondItem="Ph5-Dx-U1g" secondAttribute="bottom" constant="4" id="ywX-yq-moL"/>
                 </constraints>
             </tableViewCellContentView>
             <gestureRecognizers/>

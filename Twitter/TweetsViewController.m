@@ -12,6 +12,7 @@
 #import "TwitterClient.h"
 #import "TweetCell.h"
 #import "ComposeViewController.h"
+#import "TweetDetailsViewController.h"
 
 @interface TweetsViewController () <UITableViewDataSource, UITableViewDelegate, TweetCellDelegate>
 
@@ -69,6 +70,9 @@ const double MINIMUM_REFRESH_TIME = 60; // 60 seconds required in between refres
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    TweetDetailsViewController *vc = [[TweetDetailsViewController alloc] init];
+    vc.tweet = self.tweets[indexPath.row];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - TweetCell delegate methods
