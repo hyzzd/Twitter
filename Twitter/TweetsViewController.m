@@ -11,6 +11,7 @@
 #import "Tweet.h"
 #import "TwitterClient.h"
 #import "TweetCell.h"
+#import "ComposeViewController.h"
 
 @interface TweetsViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -30,7 +31,7 @@ const double MINIMUM_REFRESH_TIME = 60; // 60 seconds required in between refres
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.title = @"Tweets";
+    self.title = @"Home";
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Logout" style:UIBarButtonItemStylePlain target:self action:@selector(onLogout)];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(onCompose)];
 
@@ -108,6 +109,7 @@ const double MINIMUM_REFRESH_TIME = 60; // 60 seconds required in between refres
 }
 
 - (void)onCompose {
+    [self.navigationController pushViewController:[[ComposeViewController alloc] init] animated:YES];
 }
 
 @end

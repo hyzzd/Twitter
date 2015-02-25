@@ -14,6 +14,8 @@
 		9F578A9B1A98026C00705377 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F578A9A1A98026C00705377 /* Images.xcassets */; };
 		9F578A9E1A98026C00705377 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F578A9C1A98026C00705377 /* LaunchScreen.xib */; };
 		9F578AAA1A98026C00705377 /* TwitterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F578AA91A98026C00705377 /* TwitterTests.m */; };
+		9FA4D0591A9DCEF500E4459A /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA4D0571A9DCEF500E4459A /* ComposeViewController.m */; };
+		9FA4D05A1A9DCEF500E4459A /* ComposeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FA4D0581A9DCEF500E4459A /* ComposeViewController.xib */; };
 		9FE3C7AC1A9C6BFC00300C38 /* TwitterClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE3C7AB1A9C6BFC00300C38 /* TwitterClient.m */; };
 		9FE3C7B01A9C73D500300C38 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE3C7AF1A9C73D500300C38 /* User.m */; };
 		9FE3C7B31A9C73DC00300C38 /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE3C7B21A9C73DC00300C38 /* Tweet.m */; };
@@ -50,6 +52,9 @@
 		9F578AA31A98026C00705377 /* TwitterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F578AA81A98026C00705377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F578AA91A98026C00705377 /* TwitterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitterTests.m; sourceTree = "<group>"; };
+		9FA4D0561A9DCEF500E4459A /* ComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeViewController.h; sourceTree = "<group>"; };
+		9FA4D0571A9DCEF500E4459A /* ComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeViewController.m; sourceTree = "<group>"; };
+		9FA4D0581A9DCEF500E4459A /* ComposeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComposeViewController.xib; sourceTree = "<group>"; };
 		9FE3C7AA1A9C6BFC00300C38 /* TwitterClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterClient.h; sourceTree = "<group>"; };
 		9FE3C7AB1A9C6BFC00300C38 /* TwitterClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterClient.m; sourceTree = "<group>"; };
 		9FE3C7AE1A9C73D500300C38 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -87,6 +92,9 @@
 		9F3EFC091A9947FA00E37147 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9FA4D0561A9DCEF500E4459A /* ComposeViewController.h */,
+				9FA4D0571A9DCEF500E4459A /* ComposeViewController.m */,
+				9FA4D0581A9DCEF500E4459A /* ComposeViewController.xib */,
 				9F3EFC0A1A99481A00E37147 /* LoginViewController.h */,
 				9F3EFC0B1A99481A00E37147 /* LoginViewController.m */,
 				9F3EFC0C1A99481A00E37147 /* LoginViewController.xib */,
@@ -162,10 +170,10 @@
 		9FE3C7AD1A9C73CA00300C38 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9FE3C7AE1A9C73D500300C38 /* User.h */,
-				9FE3C7AF1A9C73D500300C38 /* User.m */,
 				9FE3C7B11A9C73DC00300C38 /* Tweet.h */,
 				9FE3C7B21A9C73DC00300C38 /* Tweet.m */,
+				9FE3C7AE1A9C73D500300C38 /* User.h */,
+				9FE3C7AF1A9C73D500300C38 /* User.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -289,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FE3C7B81A9C7B5F00300C38 /* TweetsViewController.xib in Resources */,
+				9FA4D05A1A9DCEF500E4459A /* ComposeViewController.xib in Resources */,
 				9FE3C7BF1A9D260C00300C38 /* TweetCell.xib in Resources */,
 				9F578A9E1A98026C00705377 /* LaunchScreen.xib in Resources */,
 				9F578A9B1A98026C00705377 /* Images.xcassets in Resources */,
@@ -346,6 +355,7 @@
 				9FE3C7B01A9C73D500300C38 /* User.m in Sources */,
 				9FE3C7AC1A9C6BFC00300C38 /* TwitterClient.m in Sources */,
 				9F578A931A98026C00705377 /* AppDelegate.m in Sources */,
+				9FA4D0591A9DCEF500E4459A /* ComposeViewController.m in Sources */,
 				9FE3C7B31A9C73DC00300C38 /* Tweet.m in Sources */,
 				9F578A901A98026C00705377 /* main.m in Sources */,
 				9F3EFC0D1A99481A00E37147 /* LoginViewController.m in Sources */,
