@@ -28,7 +28,7 @@ Time spent: `9 hours`
 
 #### Extra
 
-- [x] Refresh control is rate limited by the app to only query the API up to once per minute.
+- [x] Refresh control is rate limited by the app to only query the API up to once per minute. The remainder of the time it fetches tweets from (and stores them in) NSUserDefaults.
 
 ### Walkthrough
 
