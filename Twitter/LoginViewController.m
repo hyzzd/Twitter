@@ -21,7 +21,6 @@
     [[TwitterClient sharedInstance] loginWithCompletion:^(User *user, NSError *error) {
         if (user != nil) {
             // Modally present tweets view
-            NSLog(@"Welcome to Twitter, %@", user.name);
             [[NSNotificationCenter defaultCenter] postNotificationName:USER_DID_LOGIN_NOTIFICATION object:nil];
         } else {
             // Present error view

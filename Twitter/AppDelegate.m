@@ -29,10 +29,8 @@
     UIViewController *vc;
 
     if (user != nil) {
-        NSLog(@"Welcome %@", user.name);
         vc = [[TweetsViewController alloc] init];
     } else {
-        NSLog(@"Not logged in");
         vc = [[LoginViewController alloc] init];
     }
 

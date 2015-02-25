@@ -39,10 +39,8 @@
 }
 
 - (void)setReplyID:(NSString *)replyID andReplyUsername:(NSString *)replyUsername {
-    NSLog(@"Setting replyID to %@ and replyUsername to %@", replyID, [NSString stringWithFormat:@"@%@ ", replyUsername]);
     self.replyID = replyID;
     self.tweetTextView.text = [NSString stringWithFormat:@"@%@ ", replyUsername];
-    NSLog(@"Set replyID to %@ and replyUsername to %@", self.replyID, self.tweetTextView.text);
 }
 
 #pragma mark - Private methods

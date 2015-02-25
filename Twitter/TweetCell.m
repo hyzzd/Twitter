@@ -45,7 +45,6 @@
     self = [super init];
 
     if (self) {
-        NSLog(@"Init called with %@", tweet);
         self.tweet = tweet;
     }
 
@@ -69,12 +68,10 @@
 }
 
 - (IBAction)onReplyButton:(id)sender {
-    NSLog(@"User tapped reply button!");
     [self.delegate tweetCell:self onReplyButtonWithReplyID:self.tweet.tweetID andReplyUsername:self.tweet.user.username];
 }
 
 - (IBAction)onRetweetButton:(id)sender {
-    NSLog(@"User tapped retweet button!");
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObject:self.tweet.tweetID forKey:@"id"];
 
     if (!self.retweeted) {
@@ -89,7 +86,6 @@
 }
 
 - (IBAction)onFavoriteButton:(id)sender {
-    NSLog(@"User tapped favorite button!");
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObject:self.tweet.tweetID forKey:@"id"];
 
     if (!self.favorited) {

@@ -40,13 +40,9 @@ NSString * const TWITTER_BASE_URL = @"https://api.twitter.com";
     [self.requestSerializer removeAccessToken];
 
     [self fetchRequestTokenWithPath:@"oauth/request_token" method:@"GET" callbackURL:[NSURL URLWithString:@"cptwitter://oauth"] scope:nil success:^(BDBOAuth1Credential *requestToken) {
-        NSLog(@"Got the request token!");
-
         NSURL *authURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://api.twitter.com/oauth/authorize?oauth_token=%@", requestToken.token]];
         [[UIApplication sharedApplication] openURL:authURL];
     } failure:^(NSError *error) {
-        NSLog(@"Failed to get the request token!");
-
         if (self.loginCompletion != nil) {
             self.loginCompletion(nil, error);
         }
@@ -55,27 +51,21 @@ NSString * const TWITTER_BASE_URL = @"https://api.twitter.com";
 
 - (void)openURL:(NSURL *)url {
     [self fetchAccessTokenWithPath:@"oauth/access_token" method:@"POST" requestToken:[BDBOAuth1Credential credentialWithQueryString:url.query] success:^(BDBOAuth1Credential *accessToken) {
-        NSLog(@"Got the access token!");
         [self.requestSerializer saveAccessToken:accessToken];
 
         [self GET:@"1.1/account/verify_credentials.json" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-            NSLog(@"Current user: %@", responseObject);
             User *user = [[User alloc] initWithDictionary:responseObject];
             [User setCurrentUser:user];
-            NSLog(@"Current user: %@", user.name);
 
             if (self.loginCompletion != nil) {
                 self.loginCompletion(user, nil);
             }
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-            NSLog(@"Failed getting current user!");
-
             if (self.loginCompletion != nil) {
                 self.loginCompletion(nil, error);
             }
         }];
     } failure:^(NSError *error) {
-        NSLog(@"Failed to get the access token!");
     }];
 }
 
@@ -85,9 +75,6 @@ NSString * const TWITTER_BASE_URL = @"https://api.twitter.com";
             completion(responseObject, nil);
         }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"Failed getting tweets!");
-        NSLog(@"Error from TwitterClient: %@", error);
-
         if (completion != nil) {
             completion(nil, error);
         }

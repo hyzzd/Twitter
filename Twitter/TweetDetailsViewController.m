@@ -37,8 +37,6 @@
 }
 
 - (void)setTweet:(Tweet *)tweet {
-    NSLog(@"Setter called!");
-    NSLog(@"Here's the tweet: %@", tweet.text);
     _tweet = tweet;
 
     [self.thumbnailView setImageWithURL:[NSURL URLWithString:tweet.user.profileImageURL]];
@@ -58,7 +56,6 @@
 }
 
 - (IBAction)onReplyButton:(id)sender {
-    NSLog(@"User tapped reply button!");
     ComposeViewController *vc = [[ComposeViewController alloc] init];
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
     [self presentViewController:nvc animated:YES completion:^{
@@ -67,7 +64,6 @@
 }
 
 - (IBAction)onRetweetButton:(id)sender {
-    NSLog(@"User tapped retweet button!");
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObject:self.tweet.tweetID forKey:@"id"];
 
     if (!self.retweeted) {
@@ -82,7 +78,6 @@
 }
 
 - (IBAction)onFavoriteButton:(id)sender {
-    NSLog(@"User tapped favorite button!");
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObject:self.tweet.tweetID forKey:@"id"];
 
     if (!self.favorited) {

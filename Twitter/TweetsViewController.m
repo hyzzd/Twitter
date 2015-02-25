@@ -93,7 +93,6 @@ const double MINIMUM_REFRESH_TIME = 60; // 60 seconds required in between refres
     double currentTime = [[NSDate date] timeIntervalSinceReferenceDate];
 
     if (currentTime - lastRefresh < MINIMUM_REFRESH_TIME) {
-        NSLog(@"Skipping refresh and getting tweets from defaults due to minimum refresh time");
         NSData *data = [defaults objectForKey:SAVED_TWEETS];
 
         if (data != nil) {
@@ -114,7 +113,6 @@ const double MINIMUM_REFRESH_TIME = 60; // 60 seconds required in between refres
         [self.refreshControl endRefreshing];
         NSData *data = [NSJSONSerialization dataWithJSONObject:responseObject options:0 error:NULL];
         [defaults setObject:data forKey:SAVED_TWEETS];
-        NSLog(@"Got %ld tweets", self.tweets == nil ? 0 : self.tweets.count);
     }];
 }
 
