@@ -99,10 +99,8 @@
                 <outlet property="timeLabel" destination="2uG-cV-tBD" id="p9D-bC-TDw"/>
                 <outlet property="tweetLabel" destination="Ph5-Dx-U1g" id="RDE-dR-1WQ"/>
                 <outlet property="usernameLabel" destination="qKI-sC-61B" id="ZS9-eF-3Ji"/>
-                <outletCollection property="gestureRecognizers" destination="gs3-Ex-T1c" appends="YES" id="2dS-B7-9MF"/>
             </connections>
             <point key="canvasLocation" x="433" y="346.5"/>
         </tableViewCell>
-        <tapGestureRecognizer id="gs3-Ex-T1c"/>
     </objects>
 </document>
