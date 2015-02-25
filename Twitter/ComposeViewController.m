@@ -7,10 +7,15 @@
 //
 
 #import "ComposeViewController.h"
+#import "User.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface ComposeViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *thumbnailView;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *usernameLabel;
+@property (weak, nonatomic) IBOutlet UITextView *tweetTextView;
 
 @end
 
@@ -19,22 +24,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self.thumbnailView setImage:[UIImage imageNamed:@"Star"]];
+    User *user = [User currentUser];
+
+    [self.thumbnailView setImageWithURL:[NSURL URLWithString:user.profileImageURL]];
+    self.nameLabel.text = user.name;
+    self.usernameLabel.text = [NSString stringWithFormat:@"@%@", user.username];
+
+    self.tweetTextView.text = @"";
+    [self.tweetTextView becomeFirstResponder];
+
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Tweet" style:UIBarButtonItemStyleDone target:self action:@selector(onComposeReady)];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+#pragma mark - Private methods
 
-/*
-#pragma mark - Navigation
+- (void)onComposeReady {
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
-*/
 
 @end
