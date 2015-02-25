@@ -25,6 +25,8 @@
 
 @implementation TweetCell
 
+@synthesize tweet = _tweet;
+
 - (void)awakeFromNib {
     self.tweetLabel.preferredMaxLayoutWidth = self.tweetLabel.frame.size.width;
 }
@@ -39,13 +41,15 @@
 
     if (self) {
         NSLog(@"Init called with %@", tweet);
-        [self populateWithTweet:tweet];
+        self.tweet = tweet;
     }
 
     return self;
 }
 
-- (void)populateWithTweet:(Tweet *)tweet {
+- (void)setTweet:(Tweet *)tweet {
+    _tweet = tweet;
+
     [self.thumbnailView setImageWithURL:[NSURL URLWithString:tweet.user.profileImageURL]];
     self.thumbnailView.layer.cornerRadius = 3;
     self.thumbnailView.clipsToBounds = YES;

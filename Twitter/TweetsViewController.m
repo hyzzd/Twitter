@@ -60,7 +60,7 @@ const double MINIMUM_REFRESH_TIME = 60; // 60 seconds required in between refres
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TweetCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TweetCell" forIndexPath:indexPath];
-    [cell populateWithTweet:self.tweets[indexPath.row]];
+    cell.tweet = self.tweets[indexPath.row];
     return cell;
 }
 

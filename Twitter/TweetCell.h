@@ -11,7 +11,8 @@
 
 @interface TweetCell : UITableViewCell
 
+@property (strong, nonatomic) Tweet *tweet;
+
 - (id)initWithTweet:(Tweet *)tweet;
-- (void)populateWithTweet:(Tweet *)tweet;
 
 @end
