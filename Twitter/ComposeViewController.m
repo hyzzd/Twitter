@@ -9,6 +9,7 @@
 #import "ComposeViewController.h"
 #import "User.h"
 #import "UIImageView+AFNetworking.h"
+#import "TwitterClient.h"
 
 @interface ComposeViewController ()
 
@@ -33,13 +34,24 @@
     self.tweetTextView.text = @"";
     [self.tweetTextView becomeFirstResponder];
 
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Tweet" style:UIBarButtonItemStyleDone target:self action:@selector(onComposeReady)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(onCancelButton)];
+
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Tweet" style:UIBarButtonItemStyleDone target:self action:@selector(onTweetButton)];
 }
 
 #pragma mark - Private methods
 
-- (void)onComposeReady {
+- (void)onCancelButton {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
+- (void)onTweetButton {
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    [params setObject:self.tweetTextView.text forKey:@"status"];
+
+    [[TwitterClient sharedInstance] tweetWithParams:params completion:nil];
+
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

@@ -32,8 +32,8 @@ const double MINIMUM_REFRESH_TIME = 60; // 60 seconds required in between refres
     [super viewDidLoad];
 
     self.title = @"Home";
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Logout" style:UIBarButtonItemStylePlain target:self action:@selector(onLogout)];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(onCompose)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Logout" style:UIBarButtonItemStylePlain target:self action:@selector(onLogoutButton)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(onComposeButton)];
 
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
@@ -104,12 +104,14 @@ const double MINIMUM_REFRESH_TIME = 60; // 60 seconds required in between refres
     }];
 }
 
-- (void)onLogout {
+- (void)onLogoutButton {
     [User logout];
 }
 
-- (void)onCompose {
-    [self.navigationController pushViewController:[[ComposeViewController alloc] init] animated:YES];
+- (void)onComposeButton {
+    ComposeViewController *vc = [[ComposeViewController alloc] init];
+    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self presentViewController:nvc animated:YES completion:nil];
 }
 
 @end
