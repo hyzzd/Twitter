@@ -15,7 +15,7 @@
 
     if (self) {
         self.user = [[User alloc] initWithDictionary:dictionary[@"user"]];
-        self.text = dictionary[@"text"];
+        self.text = [dictionary[@"text"] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
         formatter.dateFormat = @"EEE MMM d HH:mm:ss Z y";
         self.createdAt = [formatter dateFromString:dictionary[@"created_at"]];

@@ -40,6 +40,8 @@ const double MINIMUM_REFRESH_TIME = 60; // 60 seconds required in between refres
     self.refreshControl = [[UIRefreshControl alloc] init];
     [self.refreshControl addTarget:self action:@selector(loadTweets) forControlEvents:UIControlEventValueChanged];
     [self.tableView insertSubview:self.refreshControl atIndex:0];
+
+    self.tableView.estimatedRowHeight = 10;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
 
     [self loadTweets];
