@@ -14,6 +14,7 @@
     self = [super init];
 
     if (self) {
+        self.tweetID = dictionary[@"id_str"];
         self.user = [[User alloc] initWithDictionary:dictionary[@"user"]];
         self.text = [dictionary[@"text"] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];

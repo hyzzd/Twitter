@@ -67,4 +67,22 @@
     [self.favoriteButton setImageWithURL:[NSURL URLWithString:@"https://g.twimg.com/dev/documentation/image/favorite.png"]];
 }
 
+- (IBAction)onReplyButton:(id)sender {
+    NSLog(@"User tapped reply button!");
+}
+
+- (IBAction)onRetweetButton:(id)sender {
+    NSLog(@"User tapped retweet button!");
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObject:self.tweet.tweetID forKey:@"id"];
+
+    [[TwitterClient sharedInstance] retweetWithParams:params completion:nil];
+}
+
+- (IBAction)onFavoriteButton:(id)sender {
+    NSLog(@"User tapped favorite button!");
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObject:self.tweet.tweetID forKey:@"id"];
+
+    [[TwitterClient sharedInstance] favoriteWithParams:params completion:nil];
+}
+
 @end

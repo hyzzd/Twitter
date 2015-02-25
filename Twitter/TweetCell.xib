@@ -55,18 +55,27 @@
                         <state key="normal" image="Reply">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
+                        <connections>
+                            <action selector="onReplyButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="PJf-H8-ZQK"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUJ-Nd-2Ud">
                         <rect key="frame" x="120" y="50" width="16" height="22"/>
                         <state key="normal" image="Retweet">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
+                        <connections>
+                            <action selector="onRetweetButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="UXo-Hg-Dib"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhU-Xz-fcM">
                         <rect key="frame" x="176" y="50" width="16" height="22"/>
                         <state key="normal" image="Star">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
+                        <connections>
+                            <action selector="onFavoriteButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="HSa-q0-EtY"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>

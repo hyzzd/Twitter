@@ -32,6 +32,7 @@ const double MINIMUM_REFRESH_TIME = 60; // 60 seconds required in between refres
 
     self.title = @"Tweets";
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Logout" style:UIBarButtonItemStylePlain target:self action:@selector(onLogout)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(onCompose)];
 
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
@@ -62,6 +63,10 @@ const double MINIMUM_REFRESH_TIME = 60; // 60 seconds required in between refres
     TweetCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TweetCell" forIndexPath:indexPath];
     cell.tweet = self.tweets[indexPath.row];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 #pragma mark - Private methods
@@ -100,6 +105,9 @@ const double MINIMUM_REFRESH_TIME = 60; // 60 seconds required in between refres
 
 - (void)onLogout {
     [User logout];
+}
+
+- (void)onCompose {
 }
 
 @end
