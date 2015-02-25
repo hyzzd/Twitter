@@ -10,6 +10,7 @@
 #import "UIImageView+AFNetworking.h"
 #import "TwitterClient.h"
 #import "NSDate+DateTools.h"
+#import "ComposeViewController.h"
 
 @interface TweetCell ()
 
@@ -65,11 +66,11 @@
 
     self.retweeted = tweet.retweeted;
     self.favorited = tweet.favorited;
-    NSLog(@"Retweeted: %d, favorited: %d", self.retweeted, self.favorited);
 }
 
 - (IBAction)onReplyButton:(id)sender {
     NSLog(@"User tapped reply button!");
+    [self.delegate tweetCell:self onReplyButtonWithReplyID:self.tweet.tweetID andReplyUsername:self.tweet.user.username];
 }
 
 - (IBAction)onRetweetButton:(id)sender {

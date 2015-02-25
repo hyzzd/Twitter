@@ -18,25 +18,31 @@
 @property (weak, nonatomic) IBOutlet UILabel *usernameLabel;
 @property (weak, nonatomic) IBOutlet UITextView *tweetTextView;
 
+@property (strong, nonatomic) NSString *replyID;
+
 @end
 
 @implementation ComposeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     User *user = [User currentUser];
 
     [self.thumbnailView setImageWithURL:[NSURL URLWithString:user.profileImageURL]];
     self.nameLabel.text = user.name;
     self.usernameLabel.text = [NSString stringWithFormat:@"@%@", user.username];
 
-    self.tweetTextView.text = @"";
     [self.tweetTextView becomeFirstResponder];
 
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(onCancelButton)];
-
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Tweet" style:UIBarButtonItemStyleDone target:self action:@selector(onTweetButton)];
+}
+
+- (void)setReplyID:(NSString *)replyID andReplyUsername:(NSString *)replyUsername {
+    NSLog(@"Setting replyID to %@ and replyUsername to %@", replyID, [NSString stringWithFormat:@"@%@ ", replyUsername]);
+    self.replyID = replyID;
+    self.tweetTextView.text = [NSString stringWithFormat:@"@%@ ", replyUsername];
+    NSLog(@"Set replyID to %@ and replyUsername to %@", self.replyID, self.tweetTextView.text);
 }
 
 #pragma mark - Private methods
@@ -49,8 +55,11 @@
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     [params setObject:self.tweetTextView.text forKey:@"status"];
 
-    [[TwitterClient sharedInstance] tweetWithParams:params completion:nil];
+    if (self.replyID != nil) {
+        [params setObject:self.replyID forKey:@"in_reply_to_status_id"];
+    }
 
+    [[TwitterClient sharedInstance] tweetWithParams:params completion:nil];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

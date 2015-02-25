@@ -13,7 +13,7 @@
 #import "TweetCell.h"
 #import "ComposeViewController.h"
 
-@interface TweetsViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface TweetsViewController () <UITableViewDataSource, UITableViewDelegate, TweetCellDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -63,6 +63,7 @@ const double MINIMUM_REFRESH_TIME = 60; // 60 seconds required in between refres
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TweetCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TweetCell" forIndexPath:indexPath];
     cell.tweet = self.tweets[indexPath.row];
+    cell.delegate = self;
     return cell;
 }
 
@@ -70,11 +71,20 @@ const double MINIMUM_REFRESH_TIME = 60; // 60 seconds required in between refres
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
+#pragma mark - TweetCell delegate methods
+
+- (void)tweetCell:(TweetCell *)tweetCell onReplyButtonWithReplyID:(NSString *)replyID andReplyUsername:(NSString *)replyUsername {
+    ComposeViewController *vc = [[ComposeViewController alloc] init];
+    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self presentViewController:nvc animated:YES completion:^{
+        [vc setReplyID:replyID andReplyUsername:replyUsername];
+    }];
+}
+
 #pragma mark - Private methods
 
 - (void)loadTweets {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-
     double lastRefresh = [defaults doubleForKey:LAST_REFRESH_TIME];
     double currentTime = [[NSDate date] timeIntervalSinceReferenceDate];
 

@@ -10,4 +10,6 @@
 
 @interface ComposeViewController : UIViewController
 
+- (void)setReplyID:(NSString *)replyID andReplyUsername:(NSString *)replyUsername;
+
 @end
