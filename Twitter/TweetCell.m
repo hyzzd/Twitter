@@ -8,6 +8,7 @@
 
 #import "TweetCell.h"
 #import "UIImageView+AFNetworking.h"
+#import "TwitterClient.h"
 
 @interface TweetCell ()
 
