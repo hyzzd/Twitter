@@ -22,6 +22,8 @@
         self.createdAt = [formatter dateFromString:dictionary[@"created_at"]];
         self.retweeted = [dictionary[@"retweeted"] boolValue];
         self.favorited = [dictionary[@"favorited"] boolValue];
+        self.retweetCount = [dictionary[@"retweet_count"] integerValue];
+        self.favoriteCount = [dictionary[@"favorite_count"] integerValue];
     }
 
     return self;

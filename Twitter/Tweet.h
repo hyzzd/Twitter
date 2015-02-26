@@ -15,6 +15,8 @@
 @property (strong, nonatomic) NSString *text;
 @property (strong, nonatomic) NSDate *createdAt;
 @property (strong, nonatomic) User *user;
+@property (assign, nonatomic) NSInteger retweetCount;
+@property (assign, nonatomic) NSInteger favoriteCount;
 @property (assign, nonatomic) BOOL retweeted;
 @property (assign, nonatomic) BOOL favorited;
 
