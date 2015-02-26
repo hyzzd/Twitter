@@ -7,9 +7,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TweetDetailsViewController">
             <connections>
                 <outlet property="favoriteButton" destination="FVi-Wb-ymt" id="sPz-LF-cz6"/>
+                <outlet property="favoriteCountLabel" destination="AO2-GL-5mj" id="fJR-WT-AHh"/>
                 <outlet property="nameLabel" destination="eY6-yp-kwR" id="JvL-1T-dGt"/>
                 <outlet property="replyButton" destination="PTA-sn-Go9" id="O9p-eN-EGw"/>
                 <outlet property="retweetButton" destination="oNx-GU-VjX" id="Ef7-uq-T8L"/>
+                <outlet property="retweetCountLabel" destination="dNQ-eV-v4D" id="ZgV-OY-HQ6"/>
                 <outlet property="thumbnailView" destination="gSU-cd-vmE" id="DGD-Uf-faz"/>
                 <outlet property="timeLabel" destination="fqJ-1L-9RO" id="uRj-0j-ouX"/>
                 <outlet property="tweetLabel" destination="Id2-yq-Rpl" id="WHB-al-Uh5"/>
@@ -48,7 +50,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2/25/15, 12:41 AM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqJ-1L-9RO">
-                    <rect key="frame" x="8" y="151" width="104" height="14.5"/>
+                    <rect key="frame" x="8" y="151" width="103.5" height="14.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
@@ -92,6 +94,18 @@
                         <action selector="onFavoriteButton:" destination="-1" eventType="touchUpInside" id="Hgd-52-gGS"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNQ-eV-v4D">
+                    <rect key="frame" x="104" y="174.5" width="13" height="13.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AO2-GL-5mj">
+                    <rect key="frame" x="180" y="174.5" width="13" height="13.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -100,9 +114,12 @@
                 <constraint firstItem="Id2-yq-Rpl" firstAttribute="top" secondItem="gSU-cd-vmE" secondAttribute="bottom" constant="8" id="5ml-xZ-bRZ"/>
                 <constraint firstItem="FVi-Wb-ymt" firstAttribute="centerY" secondItem="oNx-GU-VjX" secondAttribute="centerY" id="6Ru-hD-NWD"/>
                 <constraint firstItem="fqJ-1L-9RO" firstAttribute="leading" secondItem="Id2-yq-Rpl" secondAttribute="leading" id="8JF-B9-8OY"/>
+                <constraint firstItem="FVi-Wb-ymt" firstAttribute="centerY" secondItem="AO2-GL-5mj" secondAttribute="centerY" id="DYI-wE-Ww1"/>
                 <constraint firstItem="FVi-Wb-ymt" firstAttribute="leading" secondItem="oNx-GU-VjX" secondAttribute="trailing" constant="60" id="Drk-1t-coz"/>
+                <constraint firstItem="AO2-GL-5mj" firstAttribute="leading" secondItem="FVi-Wb-ymt" secondAttribute="trailing" constant="4" id="JfR-hi-atU"/>
                 <constraint firstItem="gSU-cd-vmE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="MUn-ZY-RbN"/>
                 <constraint firstItem="oNx-GU-VjX" firstAttribute="centerY" secondItem="FVi-Wb-ymt" secondAttribute="centerY" id="cAz-PC-GmU"/>
+                <constraint firstItem="dNQ-eV-v4D" firstAttribute="centerY" secondItem="oNx-GU-VjX" secondAttribute="centerY" id="eGE-Ys-Pl4"/>
                 <constraint firstItem="gSU-cd-vmE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="72" id="elA-xA-HoV"/>
                 <constraint firstItem="Id2-yq-Rpl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="etq-xz-oSi"/>
                 <constraint firstItem="eY6-yp-kwR" firstAttribute="leading" secondItem="gSU-cd-vmE" secondAttribute="trailing" constant="8" id="jJt-3V-NEh"/>
@@ -110,6 +127,7 @@
                 <constraint firstItem="PTA-sn-Go9" firstAttribute="top" secondItem="fqJ-1L-9RO" secondAttribute="bottom" constant="8" id="pEW-73-Aje"/>
                 <constraint firstItem="3lQ-dC-DIx" firstAttribute="top" secondItem="eY6-yp-kwR" secondAttribute="bottom" constant="1.5" id="pZf-yv-H7H"/>
                 <constraint firstItem="3lQ-dC-DIx" firstAttribute="leading" secondItem="eY6-yp-kwR" secondAttribute="leading" id="rQg-Pc-YJs"/>
+                <constraint firstItem="dNQ-eV-v4D" firstAttribute="leading" secondItem="oNx-GU-VjX" secondAttribute="trailing" constant="4" id="sft-6J-fw0"/>
                 <constraint firstItem="oNx-GU-VjX" firstAttribute="leading" secondItem="PTA-sn-Go9" secondAttribute="trailing" constant="60" id="vgs-f0-yR0"/>
                 <constraint firstItem="fqJ-1L-9RO" firstAttribute="leading" secondItem="PTA-sn-Go9" secondAttribute="leading" id="wsR-MI-648"/>
                 <constraint firstItem="eY6-yp-kwR" firstAttribute="top" secondItem="gSU-cd-vmE" secondAttribute="top" id="zyW-u1-ip7"/>

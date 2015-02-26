@@ -21,6 +21,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *replyButton;
 @property (weak, nonatomic) IBOutlet UIButton *retweetButton;
 @property (weak, nonatomic) IBOutlet UIButton *favoriteButton;
+@property (weak, nonatomic) IBOutlet UILabel *retweetCountLabel;
+@property (weak, nonatomic) IBOutlet UILabel *favoriteCountLabel;
 
 @property (assign, nonatomic) BOOL retweeted;
 @property (assign, nonatomic) BOOL favorited;
@@ -51,6 +53,9 @@
     formatter.dateFormat = @"EEE MMM d y, HH:mm";
     self.timeLabel.text = [formatter stringFromDate:tweet.createdAt];
 
+    self.retweetCountLabel.text = [NSString stringWithFormat:@"%ld", tweet.retweetCount];
+    self.favoriteCountLabel.text = [NSString stringWithFormat:@"%ld", tweet.favoriteCount];
+
     self.retweeted = tweet.retweeted;
     self.favorited = tweet.favorited;
 }
@@ -69,9 +74,13 @@
     if (!self.retweeted) {
         [[TwitterClient sharedInstance] retweetWithParams:params completion:nil];
         [self.retweetButton setImage:[UIImage imageNamed:@"RetweetSelected"] forState:UIControlStateNormal];
+        self.tweet.retweetCount++;
+        self.tweet = self.tweet;
     } else {
         [[TwitterClient sharedInstance] undoRetweetWithParams:params completion:nil];
         [self.retweetButton setImage:[UIImage imageNamed:@"Retweet"] forState:UIControlStateNormal];
+        self.tweet.retweetCount--;
+        self.tweet = self.tweet;
     }
 
     self.retweeted = !self.retweeted;
@@ -83,10 +92,13 @@
     if (!self.favorited) {
         [[TwitterClient sharedInstance] favoriteWithParams:params completion:nil];
         [self.favoriteButton setImage:[UIImage imageNamed:@"StarSelected"] forState:UIControlStateNormal];
+        self.tweet.favoriteCount++;
+        self.tweet = self.tweet;
     } else {
         [[TwitterClient sharedInstance] undoFavoriteWithParams:params completion:nil];
         [self.favoriteButton setImage:[UIImage imageNamed:@"Star"] forState:UIControlStateNormal];
-
+        self.tweet.favoriteCount--;
+        self.tweet = self.tweet;
     }
 
     self.favorited = !self.favorited;
