@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F368D651A9FC99900B8D047 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F368D631A9FC99900B8D047 /* ProfileViewController.m */; };
+		9F368D661A9FC99900B8D047 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F368D641A9FC99900B8D047 /* ProfileViewController.xib */; };
 		9F3EFC0D1A99481A00E37147 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3EFC0B1A99481A00E37147 /* LoginViewController.m */; };
 		9F3EFC0E1A99481A00E37147 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F3EFC0C1A99481A00E37147 /* LoginViewController.xib */; };
 		9F578A901A98026C00705377 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F578A8F1A98026C00705377 /* main.m */; };
@@ -41,6 +43,9 @@
 /* Begin PBXFileReference section */
 		55936C8BF860A32CA8D4CD3C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D10539F2DB1152D235D589F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9F368D621A9FC99900B8D047 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		9F368D631A9FC99900B8D047 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		9F368D641A9FC99900B8D047 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		9F3EFC0A1A99481A00E37147 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		9F3EFC0B1A99481A00E37147 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		9F3EFC0C1A99481A00E37147 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -109,6 +114,9 @@
 				9FA4D05E1A9DE82D00E4459A /* TweetDetailsViewController.h */,
 				9FA4D05F1A9DE82D00E4459A /* TweetDetailsViewController.m */,
 				9FA4D0601A9DE82D00E4459A /* TweetDetailsViewController.xib */,
+				9F368D621A9FC99900B8D047 /* ProfileViewController.h */,
+				9F368D631A9FC99900B8D047 /* ProfileViewController.m */,
+				9F368D641A9FC99900B8D047 /* ProfileViewController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -306,6 +314,7 @@
 			files = (
 				9FE3C7B81A9C7B5F00300C38 /* TweetsViewController.xib in Resources */,
 				9FA4D05A1A9DCEF500E4459A /* ComposeViewController.xib in Resources */,
+				9F368D661A9FC99900B8D047 /* ProfileViewController.xib in Resources */,
 				9FE3C7BF1A9D260C00300C38 /* TweetCell.xib in Resources */,
 				9F578A9E1A98026C00705377 /* LaunchScreen.xib in Resources */,
 				9F578A9B1A98026C00705377 /* Images.xcassets in Resources */,
@@ -369,6 +378,7 @@
 				9FA4D0611A9DE82D00E4459A /* TweetDetailsViewController.m in Sources */,
 				9F578A901A98026C00705377 /* main.m in Sources */,
 				9F3EFC0D1A99481A00E37147 /* LoginViewController.m in Sources */,
+				9F368D651A9FC99900B8D047 /* ProfileViewController.m in Sources */,
 				9FE3C7B71A9C7B5F00300C38 /* TweetsViewController.m in Sources */,
 				9FE3C7BE1A9D260C00300C38 /* TweetCell.m in Sources */,
 			);
