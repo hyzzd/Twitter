@@ -10,7 +10,6 @@
 #import "UIImageView+AFNetworking.h"
 #import "TwitterClient.h"
 #import "NSDate+DateTools.h"
-#import "ComposeViewController.h"
 
 @interface TweetCell ()
 
@@ -35,7 +34,15 @@
 @synthesize tweet = _tweet;
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
     self.tweetLabel.preferredMaxLayoutWidth = self.tweetLabel.frame.size.width;
+
+    self.thumbnailView.userInteractionEnabled = YES;
+
+    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTapProfileImage)];
+    tapRecognizer.numberOfTapsRequired = 1;
+    tapRecognizer.numberOfTouchesRequired = 1;
+    [self.thumbnailView addGestureRecognizer:tapRecognizer];
 }
 
 - (void)layoutSubviews {
@@ -111,6 +118,10 @@
     }
 
     self.favorited = !self.favorited;
+}
+
+- (void)onTapProfileImage {
+    [self.delegate didTapThumbnailForTweetCell:self];
 }
 
 @end

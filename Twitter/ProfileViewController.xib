@@ -6,6 +6,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController">
             <connections>
+                <outlet property="followersCountLabel" destination="sn1-N5-vct" id="LsI-ZX-g6p"/>
+                <outlet property="followingCountLabel" destination="lwk-VJ-JHL" id="63f-az-eUm"/>
+                <outlet property="nameLabel" destination="Ux9-tl-nSw" id="sez-W8-XBk"/>
+                <outlet property="profileImageView" destination="9vf-0a-hKL" id="bCb-Iv-OZi"/>
+                <outlet property="tableView" destination="O5q-ic-aY0" id="BSP-7i-SDc"/>
+                <outlet property="tweetCountLabel" destination="F8i-dn-tBp" id="fe1-57-d1v"/>
+                <outlet property="usernameLabel" destination="lMN-cu-Bue" id="yzt-av-Swr"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

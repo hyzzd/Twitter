@@ -13,6 +13,7 @@
 #import "TweetCell.h"
 #import "ComposeViewController.h"
 #import "TweetDetailsViewController.h"
+#import "ProfileViewController.h"
 
 @interface TweetsViewController () <UITableViewDataSource, UITableViewDelegate, TweetCellDelegate>
 
@@ -83,6 +84,13 @@ const double MINIMUM_REFRESH_TIME = 60; // 60 seconds required in between refres
     [self presentViewController:nvc animated:YES completion:^{
         [vc setReplyID:replyID andReplyUsername:replyUsername];
     }];
+}
+
+- (void)didTapThumbnailForTweetCell:(TweetCell *)tweetCell {
+    ProfileViewController *vc = [[ProfileViewController alloc] init];
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:tweetCell];
+    vc.user = ((Tweet *)self.tweets[indexPath.row]).user;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - Private methods
