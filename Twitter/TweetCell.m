@@ -37,12 +37,11 @@
     [super awakeFromNib];
     self.tweetLabel.preferredMaxLayoutWidth = self.tweetLabel.frame.size.width;
 
-    self.thumbnailView.userInteractionEnabled = YES;
-
     UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTapProfileImage)];
     tapRecognizer.numberOfTapsRequired = 1;
     tapRecognizer.numberOfTouchesRequired = 1;
     [self.thumbnailView addGestureRecognizer:tapRecognizer];
+    self.thumbnailView.userInteractionEnabled = YES;
 }
 
 - (void)layoutSubviews {

@@ -10,6 +10,7 @@
 #import "UIImageView+AFNetworking.h"
 #import "TwitterClient.h"
 #import "ComposeViewController.h"
+#import "ProfileViewController.h"
 
 @interface TweetDetailsViewController ()
 
@@ -36,6 +37,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tweet = self.tweet;
+
+    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTapProfileImage)];
+    tapRecognizer.numberOfTapsRequired = 1;
+    tapRecognizer.numberOfTouchesRequired = 1;
+    [self.thumbnailView addGestureRecognizer:tapRecognizer];
+    self.thumbnailView.userInteractionEnabled = YES;
 }
 
 - (void)setTweet:(Tweet *)tweet {
@@ -102,6 +109,12 @@
     }
 
     self.favorited = !self.favorited;
+}
+
+- (void)onTapProfileImage {
+    ProfileViewController *vc = [[ProfileViewController alloc] init];
+    vc.user = self.tweet.user;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
