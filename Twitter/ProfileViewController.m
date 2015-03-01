@@ -30,6 +30,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.profileImageView.layer.cornerRadius = 5;
+    self.profileImageView.clipsToBounds = YES;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
