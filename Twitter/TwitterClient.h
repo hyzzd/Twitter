@@ -19,6 +19,7 @@
 
 // GET methods
 - (void)homeTimelineWithParams:(NSDictionary *)params completion:(void (^)(id responseObject, NSError *error))completion;
+- (void)userTimelineWithParams:(NSDictionary *)params completion:(void (^)(id responseObject, NSError *error))completion;
 
 // POST methods
 - (void)tweetWithParams:(NSDictionary *)params completion:(void (^)(id responseObject, NSError *error))completion;
