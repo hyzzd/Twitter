@@ -16,6 +16,7 @@
 @interface ProfileViewController () <UITableViewDataSource, UITableViewDelegate, TweetCellDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *usernameLabel;
 
@@ -60,13 +61,15 @@
 
     NSString *highResolutionImageURL = [self highResolutionImageURLFromURL:user.profileImageURL];
     [self.profileImageView setImageWithURL:[NSURL URLWithString:highResolutionImageURL]];
+    [self.backgroundImageView setImageWithURL:[NSURL URLWithString:user.backgroundImageURL]];
+
     self.nameLabel.text = user.name;
     self.usernameLabel.text = [NSString stringWithFormat:@"@%@", user.username];
+
     self.tweetCountLabel.text = [NSString stringWithFormat:@"%ld", user.tweetCount];
     self.followingCountLabel.text = [NSString stringWithFormat:@"%ld", user.followingCount];
     self.followersCountLabel.text = [NSString stringWithFormat:@"%ld", user.followersCount];
 
-    // Set self.tweets
     NSDictionary *params = [NSDictionary dictionaryWithObject:self.user.username forKey:@"screen_name"];
 
     [[TwitterClient sharedInstance] userTimelineWithParams:params completion:^(id responseObject, NSError *error) {
