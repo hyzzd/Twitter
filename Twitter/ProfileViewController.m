@@ -71,7 +71,6 @@
 
     [[TwitterClient sharedInstance] userTimelineWithParams:params completion:^(id responseObject, NSError *error) {
         self.tweets = [Tweet tweetsWithArray:responseObject];
-        NSLog(@"%ld tweets: %@", self.tweets.count, self.tweets);
         [self.tableView reloadData];
     }];
 }
