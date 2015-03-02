@@ -20,6 +20,7 @@
 @property (strong, nonatomic) UINavigationController *tweetsNVC;
 
 @property (assign, nonatomic) BOOL hamburgerMenuEnabled;
+@property (assign, nonatomic) CGPoint originalCenter;
 
 @end
 
@@ -80,6 +81,33 @@ const int HAMBURGER_WIDTH = 140;
 - (void)onMentionsButton {
     [self onTimelineButton];
     ((TweetsViewController *) self.tweetsVC).shouldDisplayMentions = YES;
+}
+
+- (IBAction)onPanGesture:(UIPanGestureRecognizer *)sender {
+    NSInteger movement = [sender translationInView:self.view].x;
+
+    if ([sender state] == UIGestureRecognizerStateBegan) {
+        self.originalCenter = self.tweetsNVC.view.center;
+    } else if ([sender state] == UIGestureRecognizerStateChanged) {
+        self.tweetsNVC.view.center = CGPointMake(self.originalCenter.x + movement, self.originalCenter.y);
+    } else if ([sender state] == UIGestureRecognizerStateEnded) {
+        BOOL movingLeft = [sender velocityInView:self.view].x < 0;
+        NSInteger halfWidth = self.tweetsNVC.view.frame.size.width / 2;
+
+        if (movingLeft) {
+            [UIView animateWithDuration:0.8 delay:0 usingSpringWithDamping:0.7 initialSpringVelocity:0 options:0 animations:^{
+                self.tweetsNVC.view.center = CGPointMake(halfWidth, self.tweetsNVC.view.center.y);
+            } completion:^(BOOL finished) {
+                self.hamburgerMenuEnabled = NO;
+            }];
+        } else {
+            [UIView animateWithDuration:0.8 delay:0 usingSpringWithDamping:0.7 initialSpringVelocity:0 options:0 animations:^{
+                self.tweetsNVC.view.center = CGPointMake(halfWidth + HAMBURGER_WIDTH, self.tweetsNVC.view.center.y);
+            } completion:^(BOOL finished) {
+                self.hamburgerMenuEnabled = YES;
+            }];
+        }
+    }
 }
 
 @end
