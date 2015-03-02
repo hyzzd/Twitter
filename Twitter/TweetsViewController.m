@@ -95,32 +95,39 @@ const double MINIMUM_REFRESH_TIME = 60; // 60 seconds required in between refres
 
 #pragma mark - Private methods
 
+- (void)useDefaultsForTweets:(NSUserDefaults *)defaults {
+    NSData *data = [defaults objectForKey:SAVED_TWEETS];
+
+    if (data != nil) {
+        id responseObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
+        self.tweets = [Tweet tweetsWithArray:responseObject];
+        [self.tableView reloadData];
+    }
+
+    [self.refreshControl endRefreshing];
+}
+
 - (void)loadTweets {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     double lastRefresh = [defaults doubleForKey:LAST_REFRESH_TIME];
     double currentTime = [[NSDate date] timeIntervalSinceReferenceDate];
 
     if (currentTime - lastRefresh < MINIMUM_REFRESH_TIME) {
-        NSData *data = [defaults objectForKey:SAVED_TWEETS];
-
-        if (data != nil) {
-            id responseObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
-            self.tweets = [Tweet tweetsWithArray:responseObject];
-            [self.tableView reloadData];
-        }
-
-        [self.refreshControl endRefreshing];
+        [self useDefaultsForTweets:defaults];
         return;
     }
 
-    [defaults setDouble:currentTime forKey:LAST_REFRESH_TIME];
-
     [[TwitterClient sharedInstance] homeTimelineWithParams:nil completion:^(id responseObject, NSError *error) {
-        self.tweets = [Tweet tweetsWithArray:responseObject];
-        [self.tableView reloadData];
-        [self.refreshControl endRefreshing];
-        NSData *data = [NSJSONSerialization dataWithJSONObject:responseObject options:0 error:NULL];
-        [defaults setObject:data forKey:SAVED_TWEETS];
+        if (error == nil) {
+            [defaults setDouble:currentTime forKey:LAST_REFRESH_TIME];
+            self.tweets = [Tweet tweetsWithArray:responseObject];
+            [self.tableView reloadData];
+            [self.refreshControl endRefreshing];
+            NSData *data = [NSJSONSerialization dataWithJSONObject:responseObject options:0 error:NULL];
+            [defaults setObject:data forKey:SAVED_TWEETS];
+        } else {
+            [self useDefaultsForTweets:defaults];
+        }
     }];
 }
 
