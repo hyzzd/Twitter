@@ -18,7 +18,7 @@
 
 @interface HamburgerCell : UITableViewCell
 
-@property (weak, nonatomic) id<HamburgerCellDelegate> delegate
+@property (weak, nonatomic) id<HamburgerCellDelegate> delegate;
 @property (strong, nonatomic) NSString *text;;
 
 @end

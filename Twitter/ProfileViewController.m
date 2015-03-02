@@ -73,8 +73,12 @@
     NSDictionary *params = [NSDictionary dictionaryWithObject:self.user.username forKey:@"screen_name"];
 
     [[TwitterClient sharedInstance] userTimelineWithParams:params completion:^(id responseObject, NSError *error) {
-        self.tweets = [Tweet tweetsWithArray:responseObject];
-        [self.tableView reloadData];
+        if (error == nil) {
+            self.tweets = [Tweet tweetsWithArray:responseObject];
+            [self.tableView reloadData];
+        } else {
+            NSLog(@"Error! %@", error);
+        }
     }];
 }
 
