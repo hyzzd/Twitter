@@ -8,6 +8,11 @@
 
 #import "HamburgerViewController.h"
 #import "HamburgerCell.h"
+#import "User.h"
+
+NSString * const PROFILE_BUTTON_NOTIFICATION = @"ProfileButtonNotification";
+NSString * const TIMELINE_BUTTON_NOTIFICATION = @"TimelineButtonNotification";
+NSString * const MENTIONS_BUTTON_NOTIFICATION = @"MentionsButtonNotification";
 
 @interface HamburgerViewController () <UITableViewDataSource, UITableViewDelegate, HamburgerCellDelegate>
 
@@ -64,13 +69,13 @@ const int LOGOUT_TAB = 3;
     NSInteger row = [self.tableView indexPathForCell:hamburgerCell].row;
 
     if (row == PROFILE_TAB) {
-
+        [[NSNotificationCenter defaultCenter] postNotificationName:PROFILE_BUTTON_NOTIFICATION object:nil];
     } else if (row == HOME_TIMELINE_TAB) {
-
+        [[NSNotificationCenter defaultCenter] postNotificationName:TIMELINE_BUTTON_NOTIFICATION object:nil];
     } else if (row == MENTIONS_TAB) {
-
+        [[NSNotificationCenter defaultCenter] postNotificationName:MENTIONS_BUTTON_NOTIFICATION object:nil];
     } else if (row == LOGOUT_TAB) {
-
+        [User logout];
     } else {
         NSLog(@"Unknown row for the hamburger menu table!");
         assert(NO);

@@ -20,7 +20,7 @@
 
 - (void)setText:(NSString *)text {
     _text = text;
-    self.itemButton.titleLabel.text = text;
+    [self.itemButton setTitle:text forState:UIControlStateNormal];
 }
 
 - (IBAction)onButtonPressed:(id)sender {

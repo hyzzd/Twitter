@@ -46,8 +46,7 @@
 }
 
 - (void)userDidLogin {
-    UIViewController *vc = [[MainViewController alloc] init];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = [[MainViewController alloc] init];
     [self.window makeKeyAndVisible];
 }
 

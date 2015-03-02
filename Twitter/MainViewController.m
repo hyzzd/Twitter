@@ -9,14 +9,17 @@
 #import "MainViewController.h"
 #import "HamburgerViewController.h"
 #import "TweetsViewController.h"
+#import "ProfileViewController.h"
 
 @interface MainViewController () <TweetsViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 
 @property (strong, nonatomic) HamburgerViewController *hamburgerVC;
-@property (strong, nonatomic) TweetsViewController *tweetsVC;
+@property (strong, nonatomic) UIViewController *tweetsVC;
 @property (strong, nonatomic) UINavigationController *tweetsNVC;
+
+@property (assign, nonatomic) BOOL hamburgerMenuEnabled;
 
 @end
 
@@ -33,19 +36,65 @@ const int HAMBURGER_WIDTH = 140;
     [self.contentView addSubview:self.hamburgerVC.view];
     [self.hamburgerVC didMoveToParentViewController:self];
 
-    self.tweetsVC = [[TweetsViewController alloc] init];
-    self.tweetsVC.delegate = self;
-    self.tweetsNVC = [[UINavigationController alloc] initWithRootViewController:self.tweetsVC];
-    self.tweetsNVC.view.frame = self.contentView.frame;
-    [self addChildViewController:self.tweetsNVC];
-    [self.contentView addSubview:self.tweetsNVC.view];
-    [self.tweetsNVC didMoveToParentViewController:self];
+    [self onTimelineButton];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onProfileButton) name:PROFILE_BUTTON_NOTIFICATION object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTimelineButton) name:TIMELINE_BUTTON_NOTIFICATION object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onMentionsButton) name:MENTIONS_BUTTON_NOTIFICATION object:nil];
 }
 
 #pragma mark - TweetsViewController delegate methods
 
 - (void)tweetsViewControllerDidPressHamburgerButton:(TweetsViewController *)tweetsViewController {
-    self.tweetsNVC.view.center = CGPointMake(self.tweetsNVC.view.center.x + HAMBURGER_WIDTH, self.tweetsNVC.view.center.y);
+    [UIView animateWithDuration:0.8 delay:0 usingSpringWithDamping:0.7 initialSpringVelocity:0 options:0 animations:^{
+        self.tweetsNVC.view.center = CGPointMake(self.tweetsNVC.view.center.x + (self.hamburgerMenuEnabled ? -1 : +1) * HAMBURGER_WIDTH, self.tweetsNVC.view.center.y);
+    } completion:nil];
+
+    self.hamburgerMenuEnabled = !self.hamburgerMenuEnabled;
+}
+
+#pragma mark - Private methods
+
+- (void)onProfileButton {
+    ProfileViewController *vc = [[ProfileViewController alloc] init];
+    vc.user = [User currentUser];
+    self.tweetsVC = vc;
+
+    self.tweetsNVC = [[UINavigationController alloc] initWithRootViewController:self.tweetsVC];
+    self.tweetsNVC.view.frame = self.contentView.frame;
+    [self addChildViewController:self.tweetsNVC];
+    [self.contentView addSubview:self.tweetsNVC.view];
+    [self.tweetsNVC didMoveToParentViewController:self];
+
+    self.hamburgerMenuEnabled = NO;
+}
+
+- (void)onTimelineButton {
+    TweetsViewController *vc = [[TweetsViewController alloc] init];
+    vc.delegate = self;
+    self.tweetsVC = vc;
+
+    self.tweetsNVC = [[UINavigationController alloc] initWithRootViewController:self.tweetsVC];
+    self.tweetsNVC.view.frame = self.contentView.frame;
+    [self addChildViewController:self.tweetsNVC];
+    [self.contentView addSubview:self.tweetsNVC.view];
+    [self.tweetsNVC didMoveToParentViewController:self];
+
+    self.hamburgerMenuEnabled = NO;
+}
+
+- (void)onMentionsButton {
+    TweetsViewController *vc = [[TweetsViewController alloc] init];
+    vc.delegate = self;
+    self.tweetsVC = vc;
+
+    self.tweetsNVC = [[UINavigationController alloc] initWithRootViewController:self.tweetsVC];
+    self.tweetsNVC.view.frame = self.contentView.frame;
+    [self addChildViewController:self.tweetsNVC];
+    [self.contentView addSubview:self.tweetsNVC.view];
+    [self.tweetsNVC didMoveToParentViewController:self];
+
+    self.hamburgerMenuEnabled = NO;
 }
 
 @end

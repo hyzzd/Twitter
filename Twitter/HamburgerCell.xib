@@ -13,7 +13,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAq-ib-6zA">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAq-ib-6zA">
                         <rect key="frame" x="8" y="7" width="46" height="30"/>
                         <state key="normal" title="Button">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -23,6 +23,10 @@
                         </connections>
                     </button>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="xAq-ib-6zA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="NAO-m8-op3"/>
+                    <constraint firstAttribute="centerY" secondItem="xAq-ib-6zA" secondAttribute="centerY" id="qP7-Oc-F7c"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="itemButton" destination="xAq-ib-6zA" id="RW2-0v-Vtz"/>

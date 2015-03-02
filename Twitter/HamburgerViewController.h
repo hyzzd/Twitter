@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+extern NSString * const PROFILE_BUTTON_NOTIFICATION;
+extern NSString * const TIMELINE_BUTTON_NOTIFICATION;
+extern NSString * const MENTIONS_BUTTON_NOTIFICATION;
+
 @interface HamburgerViewController : UIViewController
 
 @end
