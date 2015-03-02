@@ -65,6 +65,7 @@ const int HAMBURGER_WIDTH = 140;
 - (void)onTimelineButton {
     TweetsViewController *vc = [[TweetsViewController alloc] init];
     vc.delegate = self;
+    vc.shouldDisplayMentions = NO;
     self.tweetsVC = vc;
 
     self.tweetsNVC = [[UINavigationController alloc] initWithRootViewController:self.tweetsVC];
@@ -77,17 +78,8 @@ const int HAMBURGER_WIDTH = 140;
 }
 
 - (void)onMentionsButton {
-    TweetsViewController *vc = [[TweetsViewController alloc] init];
-    vc.delegate = self;
-    self.tweetsVC = vc;
-
-    self.tweetsNVC = [[UINavigationController alloc] initWithRootViewController:self.tweetsVC];
-    self.tweetsNVC.view.frame = self.contentView.frame;
-    [self addChildViewController:self.tweetsNVC];
-    [self.contentView addSubview:self.tweetsNVC.view];
-    [self.tweetsNVC didMoveToParentViewController:self];
-
-    self.hamburgerMenuEnabled = NO;
+    [self onTimelineButton];
+    ((TweetsViewController *) self.tweetsVC).shouldDisplayMentions = YES;
 }
 
 @end

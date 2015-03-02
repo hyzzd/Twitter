@@ -112,23 +112,33 @@ const double MINIMUM_REFRESH_TIME = 60; // 60 seconds required in between refres
     double lastRefresh = [defaults doubleForKey:LAST_REFRESH_TIME];
     double currentTime = [[NSDate date] timeIntervalSinceReferenceDate];
 
-    if (currentTime - lastRefresh < MINIMUM_REFRESH_TIME) {
-        [self useDefaultsForTweets:defaults];
-        return;
-    }
-
-    [[TwitterClient sharedInstance] homeTimelineWithParams:nil completion:^(id responseObject, NSError *error) {
-        if (error == nil) {
-            [defaults setDouble:currentTime forKey:LAST_REFRESH_TIME];
-            self.tweets = [Tweet tweetsWithArray:responseObject];
-            [self.tableView reloadData];
-            [self.refreshControl endRefreshing];
-            NSData *data = [NSJSONSerialization dataWithJSONObject:responseObject options:0 error:NULL];
-            [defaults setObject:data forKey:SAVED_TWEETS];
-        } else {
+    if (self.shouldDisplayMentions) {
+        [[TwitterClient sharedInstance] mentionsTimelineWithParams:nil completion:^(id responseObject, NSError *error) {
+            if (error == nil) {
+                self.tweets = [Tweet tweetsWithArray:responseObject];
+                [self.tableView reloadData];
+                [self.refreshControl endRefreshing];
+            }
+        }];
+    } else {
+        if (currentTime - lastRefresh < MINIMUM_REFRESH_TIME) {
             [self useDefaultsForTweets:defaults];
+            return;
         }
-    }];
+
+        [[TwitterClient sharedInstance] homeTimelineWithParams:nil completion:^(id responseObject, NSError *error) {
+            if (error == nil) {
+                [defaults setDouble:currentTime forKey:LAST_REFRESH_TIME];
+                self.tweets = [Tweet tweetsWithArray:responseObject];
+                [self.tableView reloadData];
+                [self.refreshControl endRefreshing];
+                NSData *data = [NSJSONSerialization dataWithJSONObject:responseObject options:0 error:NULL];
+                [defaults setObject:data forKey:SAVED_TWEETS];
+            } else {
+                [self useDefaultsForTweets:defaults];
+            }
+        }];
+    }
 }
 
 - (void)onHamburgerButton {

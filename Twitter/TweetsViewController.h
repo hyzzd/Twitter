@@ -19,5 +19,6 @@
 @interface TweetsViewController : UIViewController
 
 @property (weak, nonatomic) id<TweetsViewControllerDelegate> delegate;
+@property (assign, nonatomic) BOOL shouldDisplayMentions;
 
 @end

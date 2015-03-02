@@ -93,6 +93,18 @@ NSString * const TWITTER_BASE_URL = @"https://api.twitter.com";
     }];
 }
 
+- (void)mentionsTimelineWithParams:(NSDictionary *)params completion:(void (^)(id responseObject, NSError *error))completion {
+    [self GET:@"1.1/statuses/mentions_timeline.json" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        if (completion != nil) {
+            completion(responseObject, nil);
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        if (completion != nil) {
+            completion(nil, error);
+        }
+    }];
+}
+
 - (void)tweetWithParams:(NSDictionary *)params completion:(void (^)(id, NSError *))completion {
     [self POST:@"1.1/statuses/update.json" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         if (completion != nil) {
