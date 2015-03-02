@@ -58,15 +58,8 @@ const int HAMBURGER_WIDTH = 140;
 - (void)onProfileButton {
     ProfileViewController *vc = [[ProfileViewController alloc] init];
     vc.user = [User currentUser];
-    self.tweetsVC = vc;
-
-    self.tweetsNVC = [[UINavigationController alloc] initWithRootViewController:self.tweetsVC];
-    self.tweetsNVC.view.frame = self.contentView.frame;
-    [self addChildViewController:self.tweetsNVC];
-    [self.contentView addSubview:self.tweetsNVC.view];
-    [self.tweetsNVC didMoveToParentViewController:self];
-
-    self.hamburgerMenuEnabled = NO;
+    [self.tweetsVC.navigationController pushViewController:vc animated:YES];
+    [self tweetsViewControllerDidPressHamburgerButton:nil];
 }
 
 - (void)onTimelineButton {
