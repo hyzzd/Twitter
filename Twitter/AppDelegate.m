@@ -11,7 +11,7 @@
 #import "TwitterClient.h"
 #import "User.h"
 #import "Tweet.h"
-#import "TweetsViewController.h"
+#import "MainViewController.h"
 
 @interface AppDelegate ()
 
@@ -29,12 +29,12 @@
     UIViewController *vc;
 
     if (user != nil) {
-        vc = [[TweetsViewController alloc] init];
+        vc = [[MainViewController alloc] init];
     } else {
-        vc = [[LoginViewController alloc] init];
+        vc = [[UINavigationController alloc] initWithRootViewController:[[LoginViewController alloc] init]];
     }
 
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -46,7 +46,7 @@
 }
 
 - (void)userDidLogin {
-    UIViewController *vc = [[TweetsViewController alloc] init];
+    UIViewController *vc = [[MainViewController alloc] init];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
     [self.window makeKeyAndVisible];
 }

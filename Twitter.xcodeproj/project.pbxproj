@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9F368D651A9FC99900B8D047 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F368D631A9FC99900B8D047 /* ProfileViewController.m */; };
 		9F368D661A9FC99900B8D047 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F368D641A9FC99900B8D047 /* ProfileViewController.xib */; };
+		9F3908A01AA450420017605E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F39089E1AA450420017605E /* MainViewController.m */; };
+		9F3908A11AA450420017605E /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F39089F1AA450420017605E /* MainViewController.xib */; };
 		9F3EFC0D1A99481A00E37147 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3EFC0B1A99481A00E37147 /* LoginViewController.m */; };
 		9F3EFC0E1A99481A00E37147 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F3EFC0C1A99481A00E37147 /* LoginViewController.xib */; };
 		9F578A901A98026C00705377 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F578A8F1A98026C00705377 /* main.m */; };
@@ -50,6 +52,9 @@
 		9F368D621A9FC99900B8D047 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		9F368D631A9FC99900B8D047 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		9F368D641A9FC99900B8D047 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		9F39089D1AA450420017605E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		9F39089E1AA450420017605E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		9F39089F1AA450420017605E /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		9F3EFC0A1A99481A00E37147 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		9F3EFC0B1A99481A00E37147 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		9F3EFC0C1A99481A00E37147 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -130,6 +135,9 @@
 				9F6BF2FB1AA3FD22009F4E62 /* HamburgerViewController.h */,
 				9F6BF2FC1AA3FD22009F4E62 /* HamburgerViewController.m */,
 				9F6BF2FD1AA3FD22009F4E62 /* HamburgerViewController.xib */,
+				9F39089D1AA450420017605E /* MainViewController.h */,
+				9F39089E1AA450420017605E /* MainViewController.m */,
+				9F39089F1AA450420017605E /* MainViewController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -333,6 +341,7 @@
 				9FA4D05A1A9DCEF500E4459A /* ComposeViewController.xib in Resources */,
 				9F368D661A9FC99900B8D047 /* ProfileViewController.xib in Resources */,
 				9FE3C7BF1A9D260C00300C38 /* TweetCell.xib in Resources */,
+				9F3908A11AA450420017605E /* MainViewController.xib in Resources */,
 				9F578A9E1A98026C00705377 /* LaunchScreen.xib in Resources */,
 				9F578A9B1A98026C00705377 /* Images.xcassets in Resources */,
 				9F6BF3041AA3FE11009F4E62 /* HamburgerCell.xib in Resources */,
@@ -399,6 +408,7 @@
 				9F3EFC0D1A99481A00E37147 /* LoginViewController.m in Sources */,
 				9F6BF2FE1AA3FD22009F4E62 /* HamburgerViewController.m in Sources */,
 				9F368D651A9FC99900B8D047 /* ProfileViewController.m in Sources */,
+				9F3908A01AA450420017605E /* MainViewController.m in Sources */,
 				9FE3C7B71A9C7B5F00300C38 /* TweetsViewController.m in Sources */,
 				9FE3C7BE1A9D260C00300C38 /* TweetCell.m in Sources */,
 			);

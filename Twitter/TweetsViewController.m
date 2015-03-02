@@ -34,7 +34,7 @@ const double MINIMUM_REFRESH_TIME = 60; // 60 seconds required in between refres
     [super viewDidLoad];
 
     self.title = @"Home";
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Logout" style:UIBarButtonItemStylePlain target:self action:@selector(onLogoutButton)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self action:@selector(onHamburgerButton)];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(onComposeButton)];
 
     self.tableView.dataSource = self;
@@ -131,8 +131,8 @@ const double MINIMUM_REFRESH_TIME = 60; // 60 seconds required in between refres
     }];
 }
 
-- (void)onLogoutButton {
-    [User logout];
+- (void)onHamburgerButton {
+    [self.delegate tweetsViewControllerDidPressHamburgerButton:self];
 }
 
 - (void)onComposeButton {

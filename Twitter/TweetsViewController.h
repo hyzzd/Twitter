@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class TweetsViewController;
+
+@protocol TweetsViewControllerDelegate <NSObject>
+
+- (void)tweetsViewControllerDidPressHamburgerButton:(TweetsViewController *)tweetsViewController;
+
+@end
+
 @interface TweetsViewController : UIViewController
+
+@property (weak, nonatomic) id<TweetsViewControllerDelegate> delegate;
 
 @end
