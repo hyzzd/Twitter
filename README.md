@@ -1,4 +1,4 @@
-## Twitter
+## Twitter (03/01/15)
 
 This Twitter app improves on the functionality from before with an additional hamburger menu, mentions page, and profile page.
 
@@ -19,10 +19,7 @@ Time spent: `9 hours`
 ![Video Walkthrough](twitter-round-2.gif)
 
 
-
-(Original version below)
-
-## Twitter
+## Twitter (02/22/15)
 
 This is a basic Twitter app to read and compose tweets via the [Twitter API](https://apps.twitter.com/).
 
