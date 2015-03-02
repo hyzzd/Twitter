@@ -2,7 +2,7 @@
 
 This Twitter app improves on the functionality from before with an additional hamburger menu, mentions page, and profile page.
 
-Time spent: `9 hours`
+Time spent: `10 hours`
 
 ### Features
 
