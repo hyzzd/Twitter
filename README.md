@@ -1,6 +1,27 @@
 ## Twitter
 
-This is a basic twitter app to read and compose tweets via the [Twitter API](https://apps.twitter.com/).
+This Twitter app improves on the functionality from before with an additional hamburger menu, mentions page, and profile page.
+
+Time spent: `9 hours`
+
+### Features
+
+#### Required
+
+- [x] Dragging anywhere in the view should reveal the menu.
+- [x] The menu should include links to your profile, the home timeline, and the mentions view.
+- [x] Profile page contains the user header view.
+- [x] Profile page contains a section with the users basic stats: # tweets, # following, # followers.
+- [x] Tapping on a user image should bring up that user's profile page.
+
+### Walkthrough
+
+![Video Walkthrough](twitter-round-2.gif)
+
+
+## Twitter
+
+This is a basic Twitter app to read and compose tweets via the [Twitter API](https://apps.twitter.com/).
 
 Time spent: `10 hours`
 
