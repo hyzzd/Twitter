@@ -101,7 +101,7 @@
     }];
 }
 
-- (void)didTapThumbnailForTweetCell:(TweetCell *)tweetCell {
+- (void)tweetCellDidTapThumbnail:(TweetCell *)tweetCell {
     ProfileViewController *vc = [[ProfileViewController alloc] init];
     NSIndexPath *indexPath = [self.tableView indexPathForCell:tweetCell];
     vc.user = ((Tweet *)self.tweets[indexPath.row]).user;

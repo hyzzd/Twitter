@@ -14,7 +14,7 @@
 @protocol TweetCellDelegate <NSObject>
 
 - (void)tweetCell:(TweetCell *)tweetCell onReplyButtonWithReplyID:(NSString *)replyID andReplyUsername:(NSString *)replyUsername;
-- (void)didTapThumbnailForTweetCell:(TweetCell *)tweetCell;
+- (void)tweetCellDidTapThumbnail:(TweetCell *)tweetCell;
 
 @end
 

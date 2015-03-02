@@ -34,7 +34,6 @@
 @synthesize tweet = _tweet;
 
 - (void)awakeFromNib {
-    [super awakeFromNib];
     self.tweetLabel.preferredMaxLayoutWidth = self.tweetLabel.frame.size.width;
 
     UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTapProfileImage)];
@@ -120,7 +119,7 @@
 }
 
 - (void)onTapProfileImage {
-    [self.delegate didTapThumbnailForTweetCell:self];
+    [self.delegate tweetCellDidTapThumbnail:self];
 }
 
 @end
