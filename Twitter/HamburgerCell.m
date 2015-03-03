@@ -16,8 +16,6 @@
 
 @implementation HamburgerCell
 
-@synthesize text = _text;
-
 - (void)setText:(NSString *)text {
     _text = text;
     [self.itemButton setTitle:text forState:UIControlStateNormal];

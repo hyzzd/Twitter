@@ -32,8 +32,6 @@
 
 @implementation TweetDetailsViewController
 
-@synthesize tweet = _tweet;
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tweet = self.tweet;

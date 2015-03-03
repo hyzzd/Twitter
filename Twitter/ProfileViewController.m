@@ -32,8 +32,6 @@
 
 @implementation ProfileViewController
 
-@synthesize user = _user;
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.profileImageView.layer.cornerRadius = 5;

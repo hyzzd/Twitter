@@ -31,8 +31,6 @@
 
 @implementation TweetCell
 
-@synthesize tweet = _tweet;
-
 - (void)awakeFromNib {
     self.tweetLabel.preferredMaxLayoutWidth = self.tweetLabel.frame.size.width;
 
